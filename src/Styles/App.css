@@ -4,3 +4,231 @@
     text-align: center;
 }
 
+
+.line1{
+    position: absolute;
+    bottom: 0;
+    left: 41vw;
+    width: 2px;
+    height: 0;
+    background:#FBBF00;
+    animation: line1 1s ease forwards 0.5s;
+}
+
+.line2{
+    position: absolute;
+    bottom: 100px;
+    left: 0px;
+    width: 0;
+    height: 2px;
+    background:#FBBF00;
+    animation: line2 1s ease forwards 1.3s;
+}
+
+.line3{
+    position: absolute;
+    bottom: 100px;
+    left: 50px;
+    width: 2px;
+    height: 0;
+    background:#FBBF00;
+    animation: line3 1s ease forwards 2.1s;
+}
+
+.line4{
+    position: absolute;
+    bottom: 20vw;
+    left: 20vw;
+    width: 0;
+    height: 2px;
+    background:#FBBF00;
+    animation: line4 1s ease forwards 0.5s;
+}
+
+.line5{
+    position: absolute;
+    left: 150px;
+    width: 2px;
+    height: 0;
+    background:#FBBF00;
+    animation: line5 1s ease forwards 1.3s;
+}
+
+.line6{
+    position: absolute;
+    bottom: 0px;
+    left: 200px;
+    width: 2px;
+    height: 0;
+    background:#FBBF00;
+    animation: line6 0.5s ease forwards 2.1s;
+}
+
+.line7{
+    position: absolute;
+    bottom: -100px;
+    left: 150px;
+    width: 0;
+    height: 2px;
+    background:#FBBF00;
+    animation: line7 0.5s ease forwards 2.1s;
+}
+
+.line8{
+    position: absolute;
+    bottom: -100px;
+    left: 250px;
+    width: 2px;
+    height: 0;
+    background:#FBBF00;
+    animation: line8 0.2s ease forwards 2.5s;
+}
+
+.line9{
+    position: absolute;
+    bottom: -40px;
+    left: 250px;
+    width: 0;
+    height: 2px;
+    background:#FBBF00;
+    animation: line9 0.2s ease forwards 3s;
+}
+
+.line10{
+    position: absolute;
+    bottom: 100px;
+    left: 200px;
+    width: 0;
+    height: 2px;
+    background:#FBBF00;
+    animation: line10 0.2s ease forwards 3s;
+}
+
+
+@keyframes SkyText {
+    0%{
+        height: 0;
+    }
+  
+    100%{
+        opacity: 1;
+        height: 400px;
+    }
+      
+  }
+
+@keyframes line1 {
+  0%{
+      height: 0px;
+  }
+
+  100%{
+      height: 100px;
+  }
+    
+}
+
+@keyframes line2 {
+    0%{
+        width: 0px;
+    }
+  
+    100%{
+        width: 50px;
+    }
+      
+  }
+
+  @keyframes line3 {
+    0%{
+        height: 0px;
+    }
+  
+    100%{
+        height: 220px;
+    }
+      
+  }
+
+  @keyframes line4 {
+    0%{
+        width: 0px;
+    }
+  
+    100%{
+        width: 200px;
+    }
+      
+  }
+
+  @keyframes line5 {
+    0%{
+        height: 0px;
+        transform: rotateZ(180deg);
+    }
+
+    1%{
+        transform: rotateZ(0deg);
+    }
+  
+    100%{
+        height: 100px;
+        transform: rotateZ(0deg);
+    }
+      
+  }
+
+  @keyframes line6{
+    0%{
+        height: 0px;
+    }
+  
+    100%{
+        height: 100px;
+    }
+      
+  }
+
+  @keyframes line7 {
+    0%{
+        width: 0px;
+    }
+  
+    100%{
+        width: 100px;
+    }
+      
+  }
+
+  @keyframes line8{
+    0%{
+        height: 0px;
+    }
+  
+    100%{
+        height: 60px;
+    }
+      
+  }
+
+  @keyframes line9{
+    0%{
+        width: 0px;
+    }
+  
+    100%{
+        width: 55px;
+    }
+      
+  }
+
+  @keyframes line10{
+    0%{
+        width: 0px;
+    }
+  
+    100%{
+        width: 100px;
+    }
+      
+  }
