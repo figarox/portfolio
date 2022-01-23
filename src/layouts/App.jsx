@@ -6,6 +6,8 @@ import PHPicture from '../icon/php.png';
 import HTMLPicture from '../icon/html.png';
 import CPicture from '../icon/c++.png';
 import CSSPicture from '../icon/css.png';
+import GitHub from '../icon/GitHub.png';
+import LinkedIn from '../icon/linkedin.png';
 import cubeanimtion from '../script/cubeanimation.js';
 
 const AppStyles = {
@@ -25,28 +27,33 @@ const FirstWin = {
   height: "95vh",
   backgroundColor: "white"
 }
-const Gradient = {
-  width: "100%",
-  height: "150px",
-  background: "rgb(2,0,36)",
-  background: "linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(4,4,3,1) 7%, rgba(251,191,0,1) 100%)",
-  }
-const AboutMe = {
-  width: "100%",
-  height: "500px",
-  backgroundColor: "black",
-}
 const MyPhoto = {
   position: "relative",
   width: "40vw",
   left: "300px",
   top: "-150px"
 }
+const Gradient = {
+  width: "100%",
+  height: "150px",
+  background: "rgb(2,0,36)",
+  background: "linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(4,4,3,1) 7%, rgba(251,191,0,1) 100%)",
+}
+const Technologies = {
+  width: "100%",
+  height: "500px",
+  backgroundColor: "black",
+}
+
 
 function App() {
   return (
     <div style={AppStyles}>
         <div style={Body}>
+        <div className='BoxSocial'>
+            <a href='https://github.com/figarox' target="_blank"><div className='GitHubStyle'><img src={GitHub} className='SocialPicture'></img></div></a>
+              <a href='https://www.linkedin.com/in/maciej-ro%C5%BCnawski-906390220/' target="_blank"><div className='LinkedinStyle'><img src={LinkedIn} className='SocialPicture'></img></div></a>
+        </div>
             <section style={FirstWin}>
               <div className="line1">
                 <div className="line2"></div>
@@ -64,18 +71,18 @@ function App() {
                   </div>
             </section>
             <section style={Gradient}></section>
-            <section style={AboutMe}>
+            <section style={Technologies}>
                 <h3>Umiejętności
                   <div className='line-decoration'></div>
                 </h3>
-                <div class="container">
-                  <div class="cube show-front">
-                    <div class="front"><img src={REACTPicture} className='PictureCube'></img></div>
-                    <div class="back"><img src={JSPicture} className='PictureCube'></img></div>
-                    <div class="right"><img src={PHPicture} className='PictureCube'></img></div>
-                    <div class="left"><img src={HTMLPicture} className='PictureCube'></img></div>
-                    <div class="top"><img src={CPicture} className='PictureCube'></img></div>
-                    <div class="bottom"><img src={CSSPicture} className='PictureCube'></img></div>
+                <div className="container">
+                  <div className="cube show-front">
+                    <div className="front"><img src={REACTPicture} className='PictureCube'></img></div>
+                    <div className="back"><img src={JSPicture} className='PictureCube'></img></div>
+                    <div className="right"><img src={PHPicture} className='PictureCube'></img></div>
+                    <div className="left"><img src={HTMLPicture} className='PictureCube'></img></div>
+                    <div className="top"><img src={CPicture} className='PictureCube'></img></div>
+                    <div className="bottom"><img src={CSSPicture} className='PictureCube'></img></div>
                   </div>
                 </div>
                 <div className='boxblackwin'>
