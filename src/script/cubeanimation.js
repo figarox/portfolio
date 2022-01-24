@@ -1,9 +1,9 @@
-var i = 0;                 
-var array = ['front','right','back','left','top','bottom']
-var tabtext = [
+let i = 0;                 
+const array = ['front','right','back','left','top','bottom']
+const tabtext = [
     '0 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad dolor quo optio sunt error',
     '1 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad dolor quo optio sunt error',
-    '2 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad dolor quo optio sunt error',
+    'Dzięki znajomości Javascriptu, oraz jego frameworków: Reacta oraz Vue, jestem w stanie robić proste, jak i zaawansowane strony.',
     '3 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad dolor quo optio sunt error',
     '4 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad dolor quo optio sunt error',
     '5 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad dolor quo optio sunt error',
@@ -13,14 +13,14 @@ var tabtext = [
 function myLoop() {    
     setTimeout(function() {   
         if (i < 6) {   
-        var finishtext = tabtext[i]
+        let finishtext = tabtext[i]
             document.getElementById('blackwin').innerHTML = finishtext             
 
-        var CubeID = array[i]
-            var cube = document.querySelector('.cube');
-                var currentClass = '';
-                    var showClass = 'show-' + CubeID;
-                        var cubee = cube.classList[1];
+        let CubeID = array[i]
+            const cube = document.querySelector('.cube');
+                let currentClass = '';
+                    let showClass = 'show-' + CubeID;
+                        let cubee = cube.classList[1];
 
             cube.classList.remove(cubee);
             cube.classList.add( showClass );
