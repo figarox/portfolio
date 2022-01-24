@@ -15,48 +15,9 @@ h3{
     font-size: 30px;
 }
 
-.line-decoration{
-    position: relative;
-    width: 250px;
-    height: 5px;
-    margin-top: 5px;
-    background-color: #FBBF00;
-}
-
-.blackwin{
-    color: white;
-}
-
-.boxblackwin{
-    display: block;
-    margin-left: 40%;
-    width: 50%;
-}
-        .BoxSocial a > div{
-            width: 70px;
-            height: 70px;
-            margin-left: -70px;
-            background-color: antiquewhite;
-        }
-        .SocialPicture{
-            width: 70px;
-            height: 70px;
-        }
-
-        .BoxSocial .GitHubStyle{
-            position: fixed;
-            background-color: black;
-            border-radius: 5px;
-        }
-        .BoxSocial .LinkedinStyle{
-            top: 130px;
-            position: fixed;
-            background-color: rgb(31, 110, 228);
-        }
-
 .line1{
     position: absolute;
-    bottom: 0px;
+    bottom: -13px;
     left: 41vw;
     width: 2px;
     height: 0;

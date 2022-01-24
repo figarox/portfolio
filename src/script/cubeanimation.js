@@ -20,7 +20,7 @@ function myLoop() {
             const cube = document.querySelector('.cube');
                 let currentClass = '';
                     let showClass = 'show-' + CubeID;
-                        let cubee = cube.classList[1];
+                        const cubee = cube.classList[1];
 
             cube.classList.remove(cubee);
             cube.classList.add( showClass );

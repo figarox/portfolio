@@ -1,14 +1,17 @@
 import React from 'react';
-import MePicture from '../picture/portfolio-picutre.png';
-import REACTPicture from '../icon/react.png';
-import JSPicture from '../icon/js.png';
-import PHPicture from '../icon/php.png';
-import HTMLPicture from '../icon/html.png';
-import CPicture from '../icon/c++.png';
-import CSSPicture from '../icon/css.png';
-import GitHub from '../icon/GitHub.png';
-import LinkedIn from '../icon/linkedin.png';
-import cubeanimtion from '../script/cubeanimation.js';
+  import MePicture from '../picture/portfolio-picutre.png';
+  import REACTPicture from '../icon/react.png';
+  import JSPicture from '../icon/js.png';
+  import PHPicture from '../icon/php.png';
+  import HTMLPicture from '../icon/html.png';
+  import CPicture from '../icon/c++.png';
+  import CSSPicture from '../icon/css.png';
+  import GitHub from '../icon/GitHub.png';
+  import LinkedIn from '../icon/linkedin.png';
+  import MyPhoto2 from '../picture/ja.png';
+  import 'bootstrap/dist/css/bootstrap.min.css';
+    import cubeanimtion from '../script/cubeanimation.js';
+    import animation from '../script/animation.js';
 
 const AppStyles = {
   maxWidth: "100vw",
@@ -34,17 +37,22 @@ const MyPhoto = {
   top: "-150px"
 }
 const Gradient = {
+  position: "relative",
   width: "100%",
-  height: "150px",
+  height: "50px",
   background: "rgb(2,0,36)",
-  background: "linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(4,4,3,1) 7%, rgba(251,191,0,1) 100%)",
+  background: "linear-gradient(0deg, rgba(2,0,36,0) 0%, rgba(4,4,3,0) 7%, rgba(251,191,0,1) 100%)",
 }
-const Technologies = {
+const AboutMe = {
   width: "100%",
-  height: "500px",
-  backgroundColor: "black",
+  height: "55vh",
+  backgroundColor: "white"
 }
-
+const Project = {
+  width: "100%",
+  height: "75vh",
+  backgroundColor: "white"
+}
 
 function App() {
   return (
@@ -70,27 +78,52 @@ function App() {
 
                   </div>
             </section>
-            <section style={Gradient}></section>
-            <section style={Technologies}>
+
+            <section className='Technologies'>
+            <div style={Gradient}></div>
+
                 <h3>Umiejętności
                   <div className='line-decoration'></div>
                 </h3>
-                <div className="container">
-                  <div className="cube show-front">
-                    <div className="front"><img src={REACTPicture} className='PictureCube'></img></div>
-                    <div className="back"><img src={JSPicture} className='PictureCube'></img></div>
-                    <div className="right"><img src={PHPicture} className='PictureCube'></img></div>
-                    <div className="left"><img src={HTMLPicture} className='PictureCube'></img></div>
-                    <div className="top"><img src={CPicture} className='PictureCube'></img></div>
-                    <div className="bottom"><img src={CSSPicture} className='PictureCube'></img></div>
+                <div class="row">
+                   <div class="col">
+                      <div className="containerCube js--wp">
+                        <div className="cube show-front">
+                          <div className="front"><img src={REACTPicture} className='PictureCube'></img></div>
+                          <div className="back"><img src={JSPicture} className='PictureCube'></img></div>
+                          <div className="right"><img src={PHPicture} className='PictureCube'></img></div>
+                          <div className="left"><img src={HTMLPicture} className='PictureCube'></img></div>
+                          <div className="top"><img src={CPicture} className='PictureCube'></img></div>
+                          <div className="bottom"><img src={CSSPicture} className='PictureCube'></img></div>
+                        </div>
+                      </div>
+                   </div>
+                  <div class="col">
+                    <div className='boxblackwin'>
+                      <p className='blackwin' id="blackwin">0 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad dolor quo optio sunt error</p>
+                    </div>
                   </div>
                 </div>
-                <div className='boxblackwin'>
-                  <p className='blackwin' id="blackwin">0 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad dolor quo optio sunt error</p>
-                </div>
             </section>
-            <section>
 
+            <section style={AboutMe}>
+              <div class="container">
+                  <div class="row">
+                    <div class="col">
+                        <p>Nazywam się <b>Maciej Rożnawski</b>. Ukończyłem Technikum Informatyczne w Słupsku. Zdałem egzamin zawodowy i uzyskałem świadectwo kwalifikacji.</p>
+                        <p>Programowaniem interesuję się od 10 roku życia.</p>
+                    </div>
+                    <div class="col">
+                        <img src={MyPhoto2} className='MyPhoto2'></img>
+                    </div>
+                  </div>
+                </div>      
+            </section>
+
+            <section style={Project}>
+                 <h3>Projekty
+                  <div className='line-decoration'></div>
+                </h3>
             </section>
         </div>
     </div>
