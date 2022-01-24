@@ -47,16 +47,10 @@ p.blackwin{
 
 img.MyPhoto2 {
     position: relative;
-    width: 300px;
+    width: 340px;
     height: 100%;
-    border: 10px solid black;
+    border: 5px solid #FBBF00;
     margin: 0 auto;
     display: block;
 }
 
-.col{
-    margin: 0;
-    padding: 25px;
-    min-width: 300px;
-    height: auto;
-}

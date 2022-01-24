@@ -6,12 +6,17 @@ import React from 'react';
   import HTMLPicture from '../icon/html.png';
   import CPicture from '../icon/c++.png';
   import CSSPicture from '../icon/css.png';
+  import BootStrapPicture from '../icon/bootstrap.png';
   import GitHub from '../icon/GitHub.png';
   import LinkedIn from '../icon/linkedin.png';
   import MyPhoto2 from '../picture/ja.png';
-  import 'bootstrap/dist/css/bootstrap.min.css';
-    import cubeanimtion from '../script/cubeanimation.js';
-    import animation from '../script/animation.js';
+   import 'bootstrap/dist/css/bootstrap.min.css';
+    import ProjectDiva from '../project-picture/projekt1.png';
+    import ProjectRenRom from '../project-picture/projekt2.png';
+    import ProjectMysticwar from '../project-picture/projekt3.png';
+    import ProjectTerminalDoctor from '../project-picture/projekt4.png';
+      import cubeanimtion from '../script/cubeanimation.js';
+      import animation from '../script/animation.js';
 
 const AppStyles = {
   maxWidth: "100vw",
@@ -21,7 +26,7 @@ const AppStyles = {
 const Body = {
   width: "100vw",
   height: "auto",
-  margin: "50px 20vw 80px 20vw",
+  margin: "50px 12vw 80px 12vw",
   boxShadow: "0px 0px 34px -18px rgba(0, 0, 0, 1)",
   backgroundColor: "#ffffff",
 }
@@ -45,12 +50,12 @@ const Gradient = {
 }
 const AboutMe = {
   width: "100%",
-  height: "55vh",
+  minHeight: "55vh",
   backgroundColor: "white"
 }
 const Project = {
   width: "100%",
-  height: "75vh",
+  minHeight: "75vh",
   backgroundColor: "white"
 }
 
@@ -58,10 +63,10 @@ function App() {
   return (
     <div style={AppStyles}>
         <div style={Body}>
-        <div className='BoxSocial'>
-            <a href='https://github.com/figarox' target="_blank"><div className='GitHubStyle'><img src={GitHub} className='SocialPicture'></img></div></a>
-              <a href='https://www.linkedin.com/in/maciej-ro%C5%BCnawski-906390220/' target="_blank"><div className='LinkedinStyle'><img src={LinkedIn} className='SocialPicture'></img></div></a>
-        </div>
+          <div className='BoxSocial'>
+              <a href='https://github.com/figarox' target="_blank"><div className='GitHubStyle'><img src={GitHub} className='SocialPicture'></img></div></a>
+                <a href='https://www.linkedin.com/in/maciej-ro%C5%BCnawski-906390220/' target="_blank"><div className='LinkedinStyle'><img src={LinkedIn} className='SocialPicture'></img></div></a>
+          </div>
             <section style={FirstWin}>
               <div className="line1">
                 <div className="line2"></div>
@@ -82,7 +87,7 @@ function App() {
             <section className='Technologies'>
             <div style={Gradient}></div>
 
-                <h3>Umiejętności
+                <h3 className='textcube'>Umiejętności
                   <div className='line-decoration'></div>
                 </h3>
                 <div class="row">
@@ -107,10 +112,13 @@ function App() {
             </section>
 
             <section style={AboutMe}>
+                <h1>Kim jestem?
+                  <div className='line-decoration'></div>
+                </h1>
               <div class="container">
                   <div class="row">
                     <div class="col">
-                        <p>Nazywam się <b>Maciej Rożnawski</b>. Ukończyłem Technikum Informatyczne w Słupsku. Zdałem egzamin zawodowy i uzyskałem świadectwo kwalifikacji.</p>
+                        <p>Cześć jestem <b>Maciej Rożnawski</b>. Ukończyłem Technikum Informatyczne w Słupsku. Zdałem egzamin zawodowy i uzyskałem świadectwo kwalifikacji.</p>
                         <p>Programowaniem interesuję się od 10 roku życia.</p>
                     </div>
                     <div class="col">
@@ -124,6 +132,60 @@ function App() {
                  <h3>Projekty
                   <div className='line-decoration'></div>
                 </h3>
+                <div class="container">
+                  <div class="row">
+                      <div class="col picture">
+                        <div className='BoxProject'>
+                           <img src={ProjectDiva} className='WinProjectPicture'></img>
+                            <div className='BoxProjectText'>
+                                <h4>DivaSłupsk</h4>
+                                <div className='line-decoration'></div>
+                                <h5>Komercyjny</h5>
+                                <p>dasdasdasd</p>
+                            </div>
+                            <div className='BoxLanguages'>
+                              <div className='BoxLanguagesCSS'><img src={CSSPicture} className='BoxLanguagesIcon'></img></div>
+                              <div className='BoxLanguagesHTML'><img src={HTMLPicture} className='BoxLanguagesIcon'></img></div>
+                              <div className='BoxLanguagesBT'><img src={BootStrapPicture} className='BoxLanguagesIcon'></img></div>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="col picture">
+                        <div className='BoxProject'>
+                           <img src={ProjectRenRom} className='WinProjectPicture'></img>
+                            <div className='BoxProjectText'>
+                                <h4>RenRom</h4>
+                                <div className='line-decoration'></div>
+                                <h5>Komercyjny</h5>
+                                <p>dasdasdasd</p>
+                            </div>
+                            <div className='BoxLanguages'>
+                              <div className='BoxLanguagesPHP'><img src={PHPicture} className='BoxLanguagesIcon'></img></div>
+                              <div className='BoxLanguagesCSS'><img src={CSSPicture} className='BoxLanguagesIcon'></img></div>
+                              <div className='BoxLanguagesHTML'><img src={HTMLPicture} className='BoxLanguagesIcon'></img></div>
+                              <div className='BoxLanguagesBT'><img src={BootStrapPicture} className='BoxLanguagesIcon'></img></div>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="col picture">
+                        <div className='BoxProject'>
+                           <img src={ProjectMysticwar} className='WinProjectPicture'></img>
+                            <div className='BoxProjectText'>
+                                <h4>Mysticwar</h4>
+                                <div className='line-decoration'></div>
+                                <h5>Gra</h5>
+                                <p>dasdasdasd</p>
+                            </div>
+                            <div className='BoxLanguages'>
+                              <div className='BoxLanguagesJS'><img src={JSPicture} className='BoxLanguagesIcon'></img></div>
+                              <div className='BoxLanguagesPHP'><img src={PHPicture} className='BoxLanguagesIcon'></img></div>
+                              <div className='BoxLanguagesCSS'><img src={CSSPicture} className='BoxLanguagesIcon'></img></div>
+                              <div className='BoxLanguagesHTML'><img src={HTMLPicture} className='BoxLanguagesIcon'></img></div>
+                            </div>
+                        </div>
+                      </div>
+                  </div>
+                </div>
             </section>
         </div>
     </div>

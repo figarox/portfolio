@@ -1,0 +1,75 @@
+.BoxProject{
+    margin: 50px;
+    width: 300px;
+    height: 350px;
+    background-color: white;
+    box-shadow: 0px 0px 34px -18px rgba(0, 0, 0, 1);
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    transform: rotate(3deg);
+    transition: 0.3s all linear;
+    border: 3px solid #FBBF00;
+}
+
+.WinProjectPicture{
+    position: relative;
+    border: 1px solid black;
+    width: 250px;
+    height: 150px;
+    top: 15px;
+    margin: 0 auto;
+    display: block;
+}
+.BoxProjectText{
+    position: relative;
+    top: 20px;
+    margin: 20px;
+}
+.BoxLanguages > div{
+    margin: 10px 0px 0px 0px;
+    z-index: 1;
+    position: relative;
+    left: 280px;
+    top: -250px;
+    width: 50px;
+    height: 180px;
+    border-radius: 10px;
+}
+
+.BoxLanguages .BoxLanguagesJS{
+    background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(91,74,23,1) 0%, rgba(175,138,28,1) 37%, rgba(215,167,20,1) 68%, rgba(251,190,4,1) 100%);
+    height: 60px;
+}
+.BoxLanguages .BoxLanguagesReact{
+    background-color: rgb(0, 0, 0);
+    width: 50px;
+    height: 60px;
+}
+.BoxLanguages .BoxLanguagesCSS{
+    background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(23,87,117,1) 0%, rgba(23,112,153,1) 37%, rgba(16,128,180,1) 68%, rgba(0,150,220,1) 100%);
+    height: 60px;
+}
+.BoxLanguages .BoxLanguagesHTML{
+    background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(154,56,22,1) 0%, rgba(173,65,28,1) 37%, rgba(215,73,24,1) 68%, rgba(230,76,24,1) 100%);
+    height: 60px;
+}
+.BoxLanguages .BoxLanguagesBT{
+    background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(65,17,111,1) 0%, rgba(92,24,157,1) 37%, rgba(105,23,184,1) 68%, rgba(137,17,251,1) 100%);
+    height: 60px;
+}
+.BoxLanguages .BoxLanguagesPHP{
+    background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(55,69,106,1) 0%, rgba(66,84,130,1) 37%, rgba(87,110,171,1) 68%, rgba(95,121,189,1) 100%);
+    height: 60px;
+}
+
+.BoxProject:hover{
+    transition: 0.3s all linear;
+    transform: scale(1.5);
+}
+.BoxLanguagesIcon{
+    margin-top: 5px;
+    width: 50px;
+    height: 50px;
+}
+
