@@ -14,7 +14,7 @@ const CubeAnimation = () => {
         '6 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad dolor quo optio sunt error',
     ]
     let value = 0;
-    const [isRunning, setIsRunning] = useState(false);
+    const [isRunning, setIsRunning] = useState(true);
     const [intervalId, setIntervalId] = useState(null);
 
     //Button Start/Stop Animation
@@ -25,10 +25,15 @@ const CubeAnimation = () => {
     const TogglePause = () => {
         if(isRunning === false){
             setIsRunning(true)
+            const playpause = document.querySelector('#AnimationPause');
+            playpause.classList.remove('playing');
+            playpause.classList.add('stop');            
             
         }else if(isRunning === true){
             setIsRunning(false)
-            
+            const playpause = document.querySelector('#AnimationPause');
+            playpause.classList.add('playing'); 
+            playpause.classList.remove('stop');                       
         }
     }
     //
@@ -36,7 +41,7 @@ const CubeAnimation = () => {
     //Cube Animation
     useEffect(() => {
         if(isRunning){
-            const id = window.setInterval(() => {
+             window.setInterval(() => {
                 if (i < 6) {   
                     let finishtext = tabtext[i]
                     document.getElementById('blackwin').innerHTML = finishtext             
@@ -66,7 +71,6 @@ const CubeAnimation = () => {
                     }   
 
             },1000);
-            setIntervalId(id);
         }else{
             window.clearInterval(intervalId);
         }

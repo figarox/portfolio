@@ -121,7 +121,7 @@ function App() {
                 </div>
                 <div className='row'>
                     <div class="col">
-                      <button id='AnimationPause'></button>
+                        <button id='AnimationPause'></button>
                       <div className='CubeBar'>
                         <div id='CubeBarLine'></div>
                       </div>
