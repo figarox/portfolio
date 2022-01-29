@@ -1,4 +1,6 @@
-import React from 'react';
+import React, { useState } from 'react';
+import ReactDOM from 'react-dom';
+import $ from 'jquery';
   import MePicture from '../picture/portfolio-picutre.png';
   import REACTPicture from '../icon/react.png';
   import JSPicture from '../icon/js.png';
@@ -15,8 +17,8 @@ import React from 'react';
     import ProjectRenRom from '../project-picture/projekt2.png';
     import ProjectMysticwar from '../project-picture/projekt3.png';
     import ProjectTerminalDoctor from '../project-picture/projekt4.png';
-      import cubeanimtion from '../script/cubeanimation.js';
-      import animation from '../script/animation.js';
+    import ProjectPortfolio from '../project-picture/projekt5.png';
+      import CubeAnimation from '../script/cubeanimation.jsx';
 
 const AppStyles = {
   maxWidth: "100vw",
@@ -32,7 +34,7 @@ const Body = {
 }
 const FirstWin = {
   width: "100%",
-  height: "95vh",
+  height: "950px",
   backgroundColor: "white"
 }
 const MyPhoto = {
@@ -55,13 +57,21 @@ const AboutMe = {
 }
 const Project = {
   width: "100%",
-  minHeight: "75vh",
+  minHeight: "1100px",
   backgroundColor: "white"
+}
+const Footer = {
+  width: "100%",
+  minHeight: "500px",
+  backgroundColor: "#FBBF00"
 }
 
 function App() {
+
   return (
     <div style={AppStyles}>
+      {<CubeAnimation />}
+
         <div style={Body}>
           <div className='BoxSocial'>
               <a href='https://github.com/figarox' target="_blank"><div className='GitHubStyle'><img src={GitHub} className='SocialPicture'></img></div></a>
@@ -92,8 +102,8 @@ function App() {
                 </h3>
                 <div class="row">
                    <div class="col">
-                      <div className="containerCube js--wp">
-                        <div className="cube show-front">
+                      <div className="containerCube">
+                        <div className="cube">
                           <div className="front"><img src={REACTPicture} className='PictureCube'></img></div>
                           <div className="back"><img src={JSPicture} className='PictureCube'></img></div>
                           <div className="right"><img src={PHPicture} className='PictureCube'></img></div>
@@ -107,6 +117,14 @@ function App() {
                     <div className='boxblackwin'>
                       <p className='blackwin' id="blackwin">0 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad dolor quo optio sunt error</p>
                     </div>
+                  </div>
+                </div>
+                <div className='row'>
+                    <div class="col">
+                      <button id='AnimationPause'></button>
+                      <div className='CubeBar'>
+                        <div id='CubeBarLine'></div>
+                      </div>
                   </div>
                 </div>
             </section>
@@ -128,6 +146,13 @@ function App() {
                 </div>      
             </section>
 
+            <section>
+            <h3>Technologie
+                  <div className='line-decoration'></div>
+                </h3>
+
+            </section>
+
             <section style={Project}>
                  <h3>Projekty
                   <div className='line-decoration'></div>
@@ -141,8 +166,10 @@ function App() {
                                 <h4>DivaSłupsk</h4>
                                 <div className='line-decoration'></div>
                                 <h5>Komercyjny</h5>
-                                <p>dasdasdasd</p>
+                                <p>Salon zabiegów kosmetycznych w Słupsku</p>
                             </div>
+                            <button className='BLButtonLive'>Live</button>
+                            <button className='BLButtonCode'>Kod</button>
                             <div className='BoxLanguages'>
                               <div className='BoxLanguagesCSS'><img src={CSSPicture} className='BoxLanguagesIcon'></img></div>
                               <div className='BoxLanguagesHTML'><img src={HTMLPicture} className='BoxLanguagesIcon'></img></div>
@@ -151,14 +178,16 @@ function App() {
                         </div>
                       </div>
                       <div class="col picture">
-                        <div className='BoxProject'>
+                        <div className='BoxProject2'>
                            <img src={ProjectRenRom} className='WinProjectPicture'></img>
                             <div className='BoxProjectText'>
                                 <h4>RenRom</h4>
                                 <div className='line-decoration'></div>
                                 <h5>Komercyjny</h5>
-                                <p>dasdasdasd</p>
+                                <p>Strona rehabilitacji domowej w Wejherowie</p>
                             </div>
+                            <button className='BLButtonLive'>Live</button>
+                            <button className='BLButtonCode'>Kod</button>
                             <div className='BoxLanguages'>
                               <div className='BoxLanguagesPHP'><img src={PHPicture} className='BoxLanguagesIcon'></img></div>
                               <div className='BoxLanguagesCSS'><img src={CSSPicture} className='BoxLanguagesIcon'></img></div>
@@ -173,9 +202,11 @@ function App() {
                             <div className='BoxProjectText'>
                                 <h4>Mysticwar</h4>
                                 <div className='line-decoration'></div>
-                                <h5>Gra</h5>
-                                <p>dasdasdasd</p>
+                                <h5> Moja Gra</h5>
+                                <p>Moja pierwsza gra Web, która jest w trakcie pracy, tworzą tę gre dwie osoby.Gra jest głównie tworzona w jęzuku PHP i JavaScript</p>
                             </div>
+                            <button className='BLButtonLive'>Live</button>
+                            <button className='BLButtonCode'>Kod</button>
                             <div className='BoxLanguages'>
                               <div className='BoxLanguagesJS'><img src={JSPicture} className='BoxLanguagesIcon'></img></div>
                               <div className='BoxLanguagesPHP'><img src={PHPicture} className='BoxLanguagesIcon'></img></div>
@@ -185,12 +216,54 @@ function App() {
                         </div>
                       </div>
                   </div>
+                        <div class="row">
+                            <div class="col picture">
+                              <div className='BoxProject3'>
+                                <img src={ProjectTerminalDoctor} className='WinProjectPicture'></img>
+                                  <div className='BoxProjectText'>
+                                      <h4>Terminal Doctor</h4>
+                                      <div className='line-decoration'></div>
+                                      <p>dasdasdasd</p>
+                                  </div>
+                                  <button className='BLButtonLive'>Live</button>
+                                   <button className='BLButtonCode'>Kod</button>
+                                  <div className='BoxLanguages'>
+                                    <div className='BoxLanguagesReact'><img src={REACTPicture} className='BoxLanguagesIcon'></img></div>
+                                    <div className='BoxLanguagesJS'><img src={JSPicture} className='BoxLanguagesIcon'></img></div>
+                                    <div className='BoxLanguagesCSS'><img src={CSSPicture} className='BoxLanguagesIcon'></img></div>
+                                    <div className='BoxLanguagesHTML'><img src={HTMLPicture} className='BoxLanguagesIcon'></img></div>
+                                    <div className='BoxLanguagesBT'><img src={BootStrapPicture} className='BoxLanguagesIcon'></img></div>
+                                  </div>
+                              </div>
+                            </div>
+                            <div class="col picture">
+                              <div className='BoxProject'>
+                                <img src={ProjectPortfolio} className='WinProjectPicture'></img>
+                                  <div className='BoxProjectText'>
+                                      <h4>Portfolio</h4>
+                                      <div className='line-decoration'></div>
+                                      <p>dasdasdasd</p>
+                                  </div>
+                                  <button className='BLButtonLive'>Live</button>
+                                   <button className='BLButtonCode'>Kod</button>
+                                  <div className='BoxLanguages'>
+                                    <div className='BoxLanguagesReact'><img src={REACTPicture} className='BoxLanguagesIcon'></img></div>
+                                    <div className='BoxLanguagesJS'><img src={JSPicture} className='BoxLanguagesIcon'></img></div>
+                                    <div className='BoxLanguagesCSS'><img src={CSSPicture} className='BoxLanguagesIcon'></img></div>
+                                    <div className='BoxLanguagesHTML'><img src={HTMLPicture} className='BoxLanguagesIcon'></img></div>
+                                    <div className='BoxLanguagesBT'><img src={BootStrapPicture} className='BoxLanguagesIcon'></img></div>
+                                  </div>
+                              </div>
+                            </div>
+                        </div>
                 </div>
             </section>
+
+            <section style={Footer}></section>
         </div>
     </div>
   );
   
-}
+};
 
 export default App;

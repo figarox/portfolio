@@ -6,14 +6,14 @@
 .col{
     margin: 0;
     padding: 25px;
-    min-width: 300px;
+    min-width: 350px;
     height: auto;
 }
 
 .col.picture{
     margin: 0;
     padding: 15px;
-    min-width: 150px;
+    min-width: 350px;
     height: auto;
     margin-top: 25px;
 }
@@ -23,7 +23,8 @@ section{
 }
 
 h1{
-    margin: 50px 0px 20px 30px;
+    margin-left: 20px;
+    padding: 30px;
 }
 
 h3{
@@ -36,11 +37,20 @@ h3{
 h3.textcube{
     color: rgb(255, 255, 255);
 }
+h4{
+    margin-top: -20px;
+}
+h5{
+    font-size: 20px;
+}
+.BoxProjectText p{
+    font-size: 12px;
+}
 
 .line1{
     position: absolute;
-    bottom: -13px;
-    left: 41vw;
+    top: 900px;
+    left: 28vw;
     width: 2px;
     height: 0;
     background:#FBBF00;
@@ -69,7 +79,7 @@ h3.textcube{
 
 .line4{
     position: absolute;
-    bottom: 20vw;
+    top: 450px;
     left: 20,5vw;
     width: 0;
     height: 2px;
@@ -177,7 +187,7 @@ h3.textcube{
     }
   
     100%{
-        height: 220px;
+        height: 420px;
     }
       
   }
@@ -264,3 +274,4 @@ h3.textcube{
     }
       
   }
+
