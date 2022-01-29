@@ -14,10 +14,10 @@ const CubeAnimation = () => {
         '6 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad dolor quo optio sunt error',
     ]
     let value = 0;
-    
     const [isRunning, setIsRunning] = useState(false);
     const [intervalId, setIntervalId] = useState(null);
 
+    //Button Start/Stop Animation
     useEffect(() => {
         const PauseButton = document.getElementById("AnimationPause")
         PauseButton.addEventListener("click", TogglePause)
@@ -31,6 +31,9 @@ const CubeAnimation = () => {
             
         }
     }
+    //
+
+    //Cube Animation
     useEffect(() => {
         if(isRunning){
             const id = window.setInterval(() => {
@@ -48,7 +51,7 @@ const CubeAnimation = () => {
                         cube.classList.add( showClass );
                         currentClass = showClass;
                         i++;
-                            //Cube bar
+    //Cube bar
                             if(value < 100){
                                 value = value + 20;
                                 document.getElementById('CubeBarLine').style.width = value + '%';
@@ -56,7 +59,7 @@ const CubeAnimation = () => {
                                 value = 0;
                                 document.getElementById('CubeBarLine').style.width = value + '%';
                             }
-                            //  
+     //  
                     }
                     else {
                         i = 0;
@@ -69,6 +72,7 @@ const CubeAnimation = () => {
         }
     },[isRunning])
 
+    return null
 }
 
 export default CubeAnimation;
