@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import ReactDOM from 'react-dom';
 
 const CubeAnimation = () => {
-    let i = 1;                 
     const array = ['front','right','back','left','top','bottom']
     const tabtext = [
         '0 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad dolor quo optio sunt error',
@@ -16,6 +15,9 @@ const CubeAnimation = () => {
     let value = 0;
     const [isRunning, setIsRunning] = useState(true);
     const [intervalId, setIntervalId] = useState(null);
+
+    let timer
+    const [count, setCount] = useState(1);
 
     //Button Start/Stop Animation
     useEffect(() => {
@@ -36,47 +38,51 @@ const CubeAnimation = () => {
             playpause.classList.remove('stop');                       
         }
     }
-    //
 
+    //
     //Cube Animation
     useEffect(() => {
         if(isRunning){
-             window.setInterval(() => {
-                if (i < 6) {   
+            let i = count;
+            const id = window.setInterval(() => {
+                if (i < 6) { 
                     let finishtext = tabtext[i]
                     document.getElementById('blackwin').innerHTML = finishtext             
-            
                     let CubeID = array[i]
                     const cube = document.querySelector('.cube');
                     let currentClass = 'show-right';
                     let showClass = 'show-' + CubeID;
                     const classcuberemove = cube.classList[1];
-            
+                    i++
                         cube.classList.remove(classcuberemove);
                         cube.classList.add( showClass );
                         currentClass = showClass;
-                        i++;
+                        
     //Cube bar
-                            if(value < 100){
-                                value = value + 20;
-                                document.getElementById('CubeBarLine').style.width = value + '%';
-                            }else{
-                                value = 0;
-                                document.getElementById('CubeBarLine').style.width = value + '%';
-                            }
-     //  
+                    if(value < 100){
+                        value = value + 20;
+                        document.getElementById('CubeBarLine').style.width = value + '%';
+                    }else{
+                        value = 0;
+                        document.getElementById('CubeBarLine').style.width = value + '%';
                     }
-                    else {
-                        i = 0;
-                    }   
+     //  
+                }
+                else {
+                    i = 0;
+                }   
 
             },1000);
+            setIntervalId(id);
         }else{
             window.clearInterval(intervalId);
         }
     },[isRunning])
+    
 
-    return null
+
+
+return null
 }
 
 export default CubeAnimation;

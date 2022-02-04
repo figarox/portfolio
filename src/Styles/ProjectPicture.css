@@ -25,6 +25,7 @@
 }
 
 .BoxProject > button {
+    box-shadow: 0px 0px 34px -18px rgba(0, 0, 0, 1);
     width: 100px;
     height: 45px;
     position: absolute;
@@ -36,6 +37,7 @@
 }
 
 .BoxProject2 > button {
+    box-shadow: 0px 0px 34px -18px rgba(0, 0, 0, 1);
     width: 100px;
     height: 45px;
     position: absolute;
@@ -47,6 +49,7 @@
 }
 
 .BoxProject3 > button {
+    box-shadow: 0px 0px 34px -18px rgba(0, 0, 0, 1);
     width: 100px;
     height: 45px;
     position: absolute;

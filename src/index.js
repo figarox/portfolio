@@ -5,6 +5,7 @@ import App from './layouts/App';
 import './Styles/App.css';
 import './Styles/cube.css';
 import './Styles/Another.css';
+import './Styles/screen.css';
 import './Styles/ProjectPicture.css';
 
 ReactDOM.render(

@@ -20,6 +20,7 @@ import $ from 'jquery';
     import ProjectPortfolio from '../project-picture/projekt5.png';
       import CubeAnimation from '../script/cubeanimation.jsx';
 
+
 const AppStyles = {
   maxWidth: "100vw",
   height: "100%",
@@ -36,12 +37,6 @@ const FirstWin = {
   width: "100%",
   height: "950px",
   backgroundColor: "white"
-}
-const MyPhoto = {
-  position: "relative",
-  width: "40vw",
-  left: "300px",
-  top: "-150px"
 }
 const Gradient = {
   position: "relative",
@@ -89,7 +84,7 @@ function App() {
                     <div className="line8"></div>
                     <div className="line9"></div>
                     <div className="line10"></div>
-                    <img src={MePicture} style={MyPhoto}></img>
+                    <img src={MePicture} className='MyPhoto'></img>
 
                   </div>
             </section>
@@ -100,8 +95,8 @@ function App() {
                 <h3 className='textcube'>Umiejętności
                   <div className='line-decoration'></div>
                 </h3>
-                <div class="row">
-                   <div class="col">
+                <div className="row">
+                   <div className="col">
                       <div className="containerCube">
                         <div className="cube">
                           <div className="front"><img src={REACTPicture} className='PictureCube'></img></div>
@@ -113,17 +108,21 @@ function App() {
                         </div>
                       </div>
                    </div>
-                  <div class="col">
+                  <div className="col">
                     <div className='boxblackwin'>
                       <p className='blackwin' id="blackwin">0 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad dolor quo optio sunt error</p>
                     </div>
                   </div>
                 </div>
                 <div className='row'>
-                    <div class="col">
-                        <button id='AnimationPause'></button>
-                      <div className='CubeBar'>
-                        <div id='CubeBarLine'></div>
+                    <div className="col">
+                        <div>
+                          <div className='CircleAnimation'>
+                              <button id='AnimationPause' class='play'></button>
+                          </div>
+                          <div className='CubeBar'>
+                            <div id='CubeBarLine'></div>
+                          </div>
                       </div>
                   </div>
                 </div>
@@ -133,13 +132,13 @@ function App() {
                 <h1>Kim jestem?
                   <div className='line-decoration'></div>
                 </h1>
-              <div class="container">
-                  <div class="row">
-                    <div class="col">
+              <div className="container">
+                  <div className="row">
+                    <div className="col">
                         <p>Cześć jestem <b>Maciej Rożnawski</b>. Ukończyłem Technikum Informatyczne w Słupsku. Zdałem egzamin zawodowy i uzyskałem świadectwo kwalifikacji.</p>
                         <p>Programowaniem interesuję się od 10 roku życia.</p>
                     </div>
-                    <div class="col">
+                    <div className="col">
                         <img src={MyPhoto2} className='MyPhoto2'></img>
                     </div>
                   </div>
@@ -157,9 +156,9 @@ function App() {
                  <h3>Projekty
                   <div className='line-decoration'></div>
                 </h3>
-                <div class="container">
-                  <div class="row">
-                      <div class="col picture">
+                <div className="container">
+                  <div className="row">
+                      <div className="col picture">
                         <div className='BoxProject'>
                            <img src={ProjectDiva} className='WinProjectPicture'></img>
                             <div className='BoxProjectText'>
@@ -177,7 +176,7 @@ function App() {
                             </div>
                         </div>
                       </div>
-                      <div class="col picture">
+                      <div className="col picture">
                         <div className='BoxProject2'>
                            <img src={ProjectRenRom} className='WinProjectPicture'></img>
                             <div className='BoxProjectText'>
@@ -196,7 +195,7 @@ function App() {
                             </div>
                         </div>
                       </div>
-                      <div class="col picture">
+                      <div className="col picture">
                         <div className='BoxProject'>
                            <img src={ProjectMysticwar} className='WinProjectPicture'></img>
                             <div className='BoxProjectText'>
@@ -216,8 +215,8 @@ function App() {
                         </div>
                       </div>
                   </div>
-                        <div class="row">
-                            <div class="col picture">
+                        <div className="row">
+                            <div className="col picture">
                               <div className='BoxProject3'>
                                 <img src={ProjectTerminalDoctor} className='WinProjectPicture'></img>
                                   <div className='BoxProjectText'>
@@ -236,7 +235,7 @@ function App() {
                                   </div>
                               </div>
                             </div>
-                            <div class="col picture">
+                            <div className="col picture">
                               <div className='BoxProject'>
                                 <img src={ProjectPortfolio} className='WinProjectPicture'></img>
                                   <div className='BoxProjectText'>
