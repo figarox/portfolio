@@ -1,115 +1,150 @@
 @media only screen and (max-width: 600px) {
-    .MyPhoto  {
-        position: relative;
-        width: 350px;
-        padding: 10px;
-        left: 0px;
-        top: -150px;
-    }
-    .Technologies {
-        background-size: auto;
-    }
-
-    .CircleAnimation{
-        margin-left: 2px;
-      }
-
-    .BoxSocial a > div{
-        width: 50px;
-        height: 50px;
-        margin-left: -50px;
-    }
-    .SocialPicture{
-        width: 50px;
-        height: 50px;
-    }
-
-    .BoxSocial .GitHubStyle{
-        top: 170px;
-
-    }
-    .BoxSocial .LinkedinStyle{
-        top: 240px;
-        position: fixed;
-        background-color: rgb(31, 110, 228);
-    }
-
-
-    .line1{
-        left: 300px;
-    }
-
-    @keyframes line3 {
-        0%{
-            height: 0px;
-        }
-      
-        100%{
-            height: 150px;
-        }
-          
-      }
-      @keyframes line4 {
-        0%{
-            width: 0px;
-        }
-      
-        100%{
-            width: 100px;
-        }
-          
-      }
-      .line4{
-        position: absolute;
-        top: 500px;
-        width: 0;
-        height: 2px;
-        background:#FBBF00;
-        animation: line4 1s ease forwards 0.5s;
-    }
-      .line5{
-        left: 50px;
-    }
-    
-    .line6{
-        left: 100px;
-    }
-    
-    .line7{
-        left: 50px;
-    }
-    
-    .line8{
-        position: absolute;
-        bottom: -100px;
-        left: 250px;
-        width: 2px;
-        height: 0;
-        background:#FBBF00;
-        animation: line8 0.2s ease forwards 2.5s;
-    }
-    
-    .line9{
-        position: absolute;
-        bottom: -40px;
-        left: 250px;
-        width: 0;
-        height: 2px;
-        background:#FBBF00;
-        animation: line9 0.2s ease forwards 3s;
-    }
-    
-    .line10{
-        position: absolute;
-        bottom: 100px;
-        left: 200px;
-        width: 0;
-        height: 2px;
-        background:#FBBF00;
-        animation: line10 0.2s ease forwards 3s;
-    }
-
-
-
-
+.Body{
+width: 100%;
+margin: 0px;
+box-shadow: none;
+}
+.menu {
+    margin-left: 10px; 
   }
+
+.starstyle{
+position: relative;
+width: 350px;
+height: 200px;
+margin: 0 auto;
+display: block;
+margin-top: 50px;
+margin-bottom: 50px;
+}
+
+
+section{
+    min-height: 700px;
+}
+
+.boxblackwin{
+height: 200px;
+padding: 25px;
+}
+
+.containerCube {
+top: 100px;
+height: 300px;
+}
+p.blackwin{
+color: white;
+font-size: 16px;
+margin-top: 15%;
+}
+.MyPhoto  {
+position: relative;
+width: 350px;
+padding: 10px;
+left: 0px;
+top: -150px;
+}
+.Technologies {
+background-size: auto;
+}
+
+.CircleAnimation{
+margin-left: 2px;
+}
+
+.BoxSocial a > div{
+width: 50px;
+height: 50px;
+margin-left: -50px;
+}
+.SocialPicture{
+width: 50px;
+height: 50px;
+}
+.col.picture > div:hover{
+transition: 0.3s all linear;
+transform: scale(1.08);
+z-index: 5;
+}
+
+
+
+
+.line1{
+left: 300px;
+}
+
+@keyframes line3 {
+0%{
+height: 0px;
+}
+
+100%{
+height: 150px;
+}
+
+}
+@keyframes line4 {
+0%{
+width: 0px;
+}
+
+100%{
+width: 100px;
+}
+
+}
+.line4{
+position: absolute;
+top: 500px;
+width: 0;
+height: 2px;
+background:#FBBF00;
+animation: line4 1s ease forwards 0.5s;
+}
+.line5{
+left: 50px;
+}
+
+.line6{
+left: 100px;
+}
+
+.line7{
+left: 50px;
+}
+
+.line8{
+position: absolute;
+bottom: -100px;
+left: 250px;
+width: 2px;
+height: 0;
+background:#FBBF00;
+animation: line8 0.2s ease forwards 2.5s;
+}
+
+.line9{
+position: absolute;
+bottom: -40px;
+left: 250px;
+width: 0;
+height: 2px;
+background:#FBBF00;
+animation: line9 0.2s ease forwards 3s;
+}
+
+.line10{
+position: absolute;
+bottom: 100px;
+left: 200px;
+width: 0;
+height: 2px;
+background:#FBBF00;
+animation: line10 0.2s ease forwards 3s;
+}
+
+
+
+
+}

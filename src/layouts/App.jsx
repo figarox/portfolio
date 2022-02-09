@@ -19,24 +19,12 @@ import $ from 'jquery';
     import ProjectTerminalDoctor from '../project-picture/projekt4.png';
     import ProjectPortfolio from '../project-picture/projekt5.png';
       import CubeAnimation from '../script/cubeanimation.jsx';
-
+      import star from '../picture/gwiazda.png';
 
 const AppStyles = {
   maxWidth: "100vw",
-  height: "100%",
+  height: "100vh",
   display: "flex"
-}
-const Body = {
-  width: "100vw",
-  height: "auto",
-  margin: "50px 12vw 80px 12vw",
-  boxShadow: "0px 0px 34px -18px rgba(0, 0, 0, 1)",
-  backgroundColor: "#ffffff",
-}
-const FirstWin = {
-  width: "100%",
-  height: "950px",
-  backgroundColor: "white"
 }
 const Gradient = {
   position: "relative",
@@ -45,113 +33,133 @@ const Gradient = {
   background: "rgb(2,0,36)",
   background: "linear-gradient(0deg, rgba(2,0,36,0) 0%, rgba(4,4,3,0) 7%, rgba(251,191,0,1) 100%)",
 }
-const AboutMe = {
-  width: "100%",
-  minHeight: "55vh",
-  backgroundColor: "white"
-}
 const Project = {
-  width: "100%",
   minHeight: "1100px",
   backgroundColor: "white"
 }
 const Footer = {
-  width: "100%",
   minHeight: "500px",
   backgroundColor: "#FBBF00"
+}
+const starstyle = {
+  width: "25%",
+  height: "25%",
+  margin: "0 auto",
+  position: "relative",
+
 }
 
 function App() {
 
   return (
     <div style={AppStyles}>
-      {<CubeAnimation />}
+        {<CubeAnimation/>}
+        <div className='body'>
+            <nav class="menu">
+              <input type="checkbox" href="#" class="menu-open" name="menu-open" id="menu-open"/>
+              <label class="menu-open-button" for="menu-open">
+                <span class="hamburger hamburger-1"></span>
+                <span class="hamburger hamburger-2"></span>
+                <span class="hamburger hamburger-3"></span>
+              </label>
+              
+              <a href="https://www.facebook.com/maciek.roznawski" target="_blank" class="menu-item"><ion-icon name="logo-facebook"></ion-icon></a>
+              <a href="https://github.com/figarox" target="_blank" class="menu-item"><ion-icon name="logo-github"></ion-icon></a>
+              <a href="https://www.linkedin.com/in/maciej-ro%C5%BCnawski-906390220/" target="_blank" class="menu-item"><ion-icon name="logo-linkedin"></ion-icon></a>
 
-        <div style={Body}>
-          <div className='BoxSocial'>
-              <a href='https://github.com/figarox' target="_blank"><div className='GitHubStyle'><img src={GitHub} className='SocialPicture'></img></div></a>
-                <a href='https://www.linkedin.com/in/maciej-ro%C5%BCnawski-906390220/' target="_blank"><div className='LinkedinStyle'><img src={LinkedIn} className='SocialPicture'></img></div></a>
-          </div>
-            <section style={FirstWin}>
-              <div className="line1">
-                <div className="line2"></div>
-                  <div className="line3"></div>
-              </div>
-                  <div className="line4">
-                    <div className="line6"></div>
-                    <div className="line5"></div>
-                    <div className="line7"></div>
-                    <div className="line8"></div>
-                    <div className="line9"></div>
-                    <div className="line10"></div>
-                    <img src={MePicture} className='MyPhoto'></img>
+            </nav>
 
+            <section>
+              <div className='cubesection'></div>
+                <div className='BoxSection'>
+                  <div className='row'>
+                    <div className='col'>
+                    </div>
+                    <div className='col'>    
+                    </div>
                   </div>
+              </div>
             </section>
+            <img src={star} className='starstyle'></img>
 
-            <section className='Technologies'>
-            <div style={Gradient}></div>
+            <section>
+              <div className='cubesection'></div>
+              <div className='BoxSection'>
+              <h1>Kim jestem?
+                    <div className='line-decoration'></div>
+                  </h1>
+                <div className="container">
+                    <div className="row">
+                      <div className="col">
+                          <p>Cześć jestem <b>Maciej Rożnawski</b>. Ukończyłem Technikum Informatyczne w Słupsku. Zdałem egzamin zawodowy i uzyskałem świadectwo kwalifikacji.</p>
+                          <p>Programowaniem interesuję się od 10 roku życia.</p>
+                      </div>
+                      <div className="col">
+                          <img src={MyPhoto2} className='MyPhoto2'></img>
+                      </div>
+                    </div>
+                  </div>  
+              </div>
+            </section>
+            <img src={star} className='starstyle'></img>
 
-                <h3 className='textcube'>Umiejętności
-                  <div className='line-decoration'></div>
-                </h3>
-                <div className="row">
-                   <div className="col">
-                      <div className="containerCube">
-                        <div className="cube">
-                          <div className="front"><img src={REACTPicture} className='PictureCube'></img></div>
-                          <div className="back"><img src={JSPicture} className='PictureCube'></img></div>
-                          <div className="right"><img src={PHPicture} className='PictureCube'></img></div>
-                          <div className="left"><img src={HTMLPicture} className='PictureCube'></img></div>
-                          <div className="top"><img src={CPicture} className='PictureCube'></img></div>
-                          <div className="bottom"><img src={CSSPicture} className='PictureCube'></img></div>
+
+            <section>
+            <div className='cubesection'></div>
+              <div className='BoxSection'>
+                <div className='TechPicutre'>
+                   <div style={Gradient}></div>
+                        <h3 className='textcube'>Umiejętności
+                          <div className='line-decoration'></div>
+                        </h3>
+                        <div className="row">
+                          <div className="col">
+                              <div className="containerCube">
+                                <div className="cube">
+                                  <div className="front"><img src={REACTPicture} className='PictureCube'></img></div>
+                                  <div className="back"><img src={JSPicture} className='PictureCube'></img></div>
+                                  <div className="right"><img src={PHPicture} className='PictureCube'></img></div>
+                                  <div className="left"><img src={HTMLPicture} className='PictureCube'></img></div>
+                                  <div className="top"><img src={CPicture} className='PictureCube'></img></div>
+                                  <div className="bottom"><img src={CSSPicture} className='PictureCube'></img></div>
+                                </div>
+                              </div>
+                          </div>
+                          <div className="col">
+                            <div className='boxblackwin'>
+                              <p className='blackwin' id="blackwin">0 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad dolor quo optio sunt error</p>
+                            </div>
+                          </div>
+                        </div>
+                      <div className='row'>
+                          <div className="col">
+                              <div>
+                                <div className='CircleAnimation'>
+                                    <button id='AnimationPause' class='play'></button>
+                                </div>
+                                <div className='CubeBar'>
+                                  <div id='CubeBarLine'></div>
+                                </div>
+                            </div>
                         </div>
                       </div>
-                   </div>
-                  <div className="col">
-                    <div className='boxblackwin'>
-                      <p className='blackwin' id="blackwin">0 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad dolor quo optio sunt error</p>
-                    </div>
-                  </div>
                 </div>
-                <div className='row'>
-                    <div className="col">
-                        <div>
-                          <div className='CircleAnimation'>
-                              <button id='AnimationPause' class='play'></button>
-                          </div>
-                          <div className='CubeBar'>
-                            <div id='CubeBarLine'></div>
-                          </div>
-                      </div>
-                  </div>
-                </div>
+              </div>
             </section>
-
-            <section style={AboutMe}>
-                <h1>Kim jestem?
-                  <div className='line-decoration'></div>
-                </h1>
-              <div className="container">
-                  <div className="row">
-                    <div className="col">
-                        <p>Cześć jestem <b>Maciej Rożnawski</b>. Ukończyłem Technikum Informatyczne w Słupsku. Zdałem egzamin zawodowy i uzyskałem świadectwo kwalifikacji.</p>
-                        <p>Programowaniem interesuję się od 10 roku życia.</p>
-                    </div>
-                    <div className="col">
-                        <img src={MyPhoto2} className='MyPhoto2'></img>
-                    </div>
-                  </div>
-                </div>      
-            </section>
+            <img src={star} className='starstyle'></img>
 
             <section>
             <h3>Technologie
                   <div className='line-decoration'></div>
                 </h3>
+            <div className='row'>
+              <div className='col'>
 
+              </div>
+            </div>
             </section>
-
+            <img src={star} className='starstyle'></img>
+            
             <section style={Project}>
                  <h3>Projekty
                   <div className='line-decoration'></div>

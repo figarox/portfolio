@@ -1,8 +1,7 @@
-.MyPhoto  {
+.MyPhoto{
     position: relative;
     width: 40vw;
-    left: 300px;
-    top: -150px;
+
 }
 
 .line-decoration{
@@ -24,40 +23,34 @@ p.blackwin{
     height: 400px;
     padding: 20px;
 }
-        .BoxSocial a > div{
-            width: 70px;
-            height: 70px;
-            margin-left: -70px;
-            background-color: antiquewhite;
-        }
-        .SocialPicture{
-            width: 70px;
-            height: 70px;
-        }
 
-        .BoxSocial .GitHubStyle{
-            position: fixed;
-            background-color: black;
-            border-radius: 5px;
-        }
-        .BoxSocial .LinkedinStyle{
-            top: 130px;
-            position: fixed;
-            background-color: rgb(31, 110, 228);
-        }
+.BoxSocial {
+     position: relative;
+     width: 70px;
+     height: 70px;
+     background-color: rgb(38, 49, 116);
+     border-radius: 10px;
+     cursor: pointer;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     transition: 0.5s;
+  }
+  
+  .BoxSocial span {
+    position: absolute;
+    width: 7px;
+    height: 7px;
+    background-color: white;
+    border-radius: 50%;
+    transform: translate(calc(12px * var(--x))calc(12px * var(--y)));
+  }
+  
 
-.Technologies {
-    margin-bottom: 50px;
-    background-color: aqua;
-    height: auto;
-    background-image: url('../picture/space.jpg');
-    background-size: 140%;
-    background-repeat: no-repeat;
-}
 
 img.MyPhoto2 {
     position: relative;
-    width: 340px;
+    width: 100%;
     height: 100%;
     border: 5px solid #FBBF00;
     margin: 0 auto;
