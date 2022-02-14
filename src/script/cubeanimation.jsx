@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import ReactDOM from 'react-dom';
+import $ from 'jquery';
 
 const CubeAnimation = () => {
     const array = ['front','right','back','left','top','bottom']

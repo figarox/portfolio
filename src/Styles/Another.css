@@ -13,8 +13,8 @@
 }
 
 p.blackwin{
-    color: white;
-    font-size: 18px;
+    color: rgb(0, 0, 0);
+    font-size: 19px;
     margin-top: 15%;
 }
 
@@ -46,11 +46,9 @@ p.blackwin{
     transform: translate(calc(12px * var(--x))calc(12px * var(--y)));
   }
   
-
-
 img.MyPhoto2 {
     position: relative;
-    width: 100%;
+    width: 50%;
     height: 100%;
     border: 5px solid #FBBF00;
     margin: 0 auto;
