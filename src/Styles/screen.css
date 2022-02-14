@@ -26,6 +26,29 @@ margin-top: 50px;
 margin-bottom: 50px;
 }
 
+#HelloLogo{
+  width: 30vw;
+  position: absolute;
+  top: 35%;
+  left: 21%;
+  transform: translate(-50%,-50%);
+}
+#NameLogo{
+  position: absolute;
+  top: 40%;
+  left: 12px;
+  width: 80vw;
+}
+
+.col-4 > .test-box1:hover #FlyModel{
+  transform: scale(1);
+}  
+
+#FlyModel{
+  transition: 0.3s all linear;
+  width: 350px;
+  
+}
 
 section{
     min-height: 700px;
