@@ -55,3 +55,107 @@ img.MyPhoto2 {
     display: block;
 }
 
+.Js-Tech{
+    width: 150px;
+    height: 150px;
+    background: url(../icon/js.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+}
+.React-Tech{
+    width: 150px;
+    height: 150px;
+    background: url(../icon/react.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+}
+.Ts-Tech{
+    width: 150px;
+    height: 150px;
+    background: url(../icon/Typescript.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+}
+.Html-Tech{
+    width: 150px;
+    height: 150px;
+    background: url(../icon/html.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+}
+.Css-Tech{
+    width: 150px;
+    height: 150px;
+    background: url(../icon/css.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+}
+.C-Tech{
+    width: 150px;
+    height: 150px;
+    background: url(../icon/c++.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+}
+.Bootstrap-Tech{
+    width: 150px;
+    height: 150px;
+    background: url(../icon/bootstrap.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+}
+.Php-Tech{
+    width: 150px;
+    height: 150px;
+    background: url(../icon/php.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+}
+.Git-Tech{
+    width: 150px;
+    height: 150px;
+    background: url(../icon/git.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+}
+.Svg-Tech{
+    width: 150px;
+    height: 150px;
+    background: url(../icon/SVG_Logo.svg.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+}
+.Figma-Tech{
+    width: 150px;
+    height: 150px;
+    background: url(../icon/figma.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+}
+.Vsc-Tech{
+    width: 150px;
+    height: 150px;
+    background: url(../icon/vsc.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+}
+
+
+
+
+
+
+
+

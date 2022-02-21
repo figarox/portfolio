@@ -1,0 +1,131 @@
+#ComputerSVG{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+#Computer{
+    opacity: 0;
+    animation: opacity 1.5s ease forwards 1s;
+}
+#Computer #Rectangle15{
+    opacity: 0;
+    animation: opacity-fade-up 1s ease forwards 1.5s;
+}
+#Computer #Rectangle16{
+    opacity: 0;
+    animation: opacity-fade-up 1s ease forwards 1.5s;
+}
+#Computer #Rectangle17{
+    opacity: 0;
+    animation: opacity-fade-up 1s ease forwards 1.8s;
+}
+#Computer #Rectangle18{
+    animation: opacity-fade-up 1s ease forwards 1.9s;
+    opacity: 0;
+}
+#Computer #Rectangle19{
+    animation: opacity-fade-up 1s ease forwards 2s;
+    opacity: 0;
+}
+
+    #Phone{
+        opacity: 0;
+        animation: opacity 1.5s ease forwards 3s;
+    }
+    #Phone #Rectangle6{
+        opacity: 0;
+        animation: opacity-fade-up 1s ease forwards 3.5s;
+    }
+    #Phone #Rectangle7{
+        opacity: 0;
+        animation: opacity-fade-up 1s ease forwards 3.5s;
+    }
+    #Phone #Rectangle8{
+        opacity: 0;
+        animation: opacity-fade-up 1s ease forwards 3.7s;
+    }
+    #Phone #Rectangle9{
+        opacity: 0;
+        animation: opacity-fade-up 1s ease forwards 3.9s;
+    }
+    #Phone #Rectangle10{
+        opacity: 0;
+        animation: opacity-fade-up 1s ease forwards 4.1s;
+    }
+    #Phone #Rectangle11{
+        opacity: 0;
+        animation: opacity-fade-up 1s ease forwards 4.4s;
+    }
+    #Phone #Rectangle12{
+        opacity: 0;
+        animation: opacity-fade-up 1s ease forwards 4.7s;
+    }
+    #Phone #Rectangle13{
+        opacity: 0;
+        animation: opacity-fade-up 1s ease forwards 5s;
+    }
+    #Phone #Rectangle14{
+        opacity: 0;
+        animation: opacity-fade-up 1s ease forwards 5s;
+    }
+
+        #Tablet{
+            opacity: 0;
+            animation: opacity 1.5s ease forwards 6s;
+        }
+        #Tablet #Rectangle24{
+            opacity: 0;
+            animation: opacity-fade-up 1s ease forwards 6.3s;
+        }
+        #Tablet #Rectangle26{
+            opacity: 0;
+            animation: opacity-fade-up 1s ease forwards 6.3s;
+        }
+        #Tablet #Rectangle29{
+            opacity: 0;
+            animation: opacity-fade-up 1s ease forwards 6.6s;
+        }
+        #Tablet #Rectangle30{
+            opacity: 0;
+            animation: opacity-fade-up 1s ease forwards 6.9s;
+        }
+        #Tablet #Rectangle31{
+            opacity: 0;
+            animation: opacity-fade-up 1s ease forwards 7.2s;
+        }
+
+        #Tablet #Rectangle32{
+            opacity: 0;
+            animation: opacity-fade-up 1s ease forwards 7.4s;
+        }
+        #Tablet #Rectangle25{
+            opacity: 0;
+            animation: opacity-fade-up 1s ease forwards 7.8s;
+        }
+        #Tablet #Rectangle27{
+            opacity: 0;
+            animation: opacity-fade-up 1s ease forwards 7.8s;
+        }
+
+
+
+
+@keyframes opacity-fade-up {
+    0%{
+        opacity: 0;
+        transform: translateY(25px);
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+@keyframes opacity {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}

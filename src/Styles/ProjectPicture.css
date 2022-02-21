@@ -24,7 +24,7 @@
     transform: rotate(-10deg) scale(0.85);
 }
 
-.BoxProject > button {
+.BoxProject > a > button {
     box-shadow: 0px 0px 34px -18px rgba(0, 0, 0, 1);
     width: 100px;
     height: 45px;
@@ -36,7 +36,7 @@
     transition: 0.3s all linear;
 }
 
-.BoxProject2 > button {
+.BoxProject2 > a > button {
     box-shadow: 0px 0px 34px -18px rgba(0, 0, 0, 1);
     width: 100px;
     height: 45px;
@@ -48,7 +48,7 @@
     transition: 0.3s all linear;
 }
 
-.BoxProject3 > button {
+.BoxProject3 > a > button {
     box-shadow: 0px 0px 34px -18px rgba(0, 0, 0, 1);
     width: 100px;
     height: 45px;
@@ -60,18 +60,18 @@
     transition: 0.3s all linear;
 }
 
-.BLButtonLive{
+a .BLButtonLive{
     left: 25px;
 }
-.BLButtonCode{
+a .BLButtonCode{
     left: 165px;
 }
 
-.BLButtonLive:hover{
+a .BLButtonLive:hover{
     background-color: rgba(255, 0, 0, 0.541);
     transition: 0.3s all linear;
 }
-.BLButtonCode:hover{
+a .BLButtonCode:hover{
     background-color: rgba(0, 0, 0, 0.541);
     transition: 0.3s all linear;
     color: white;

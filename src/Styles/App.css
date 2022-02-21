@@ -15,11 +15,15 @@
   }
   
   .col{
-    margin-left: 10px;
-    margin-right: 10px;
-    margin-bottom: 50px;
-    min-width: 350px;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-bottom: 100px;
+    margin-top: 50px;
+    min-width: 300px;
     height: auto;
+}
+.col p {
+    padding-left: 45px;
 }
 
 .BoxMain > .row > .col{
@@ -37,7 +41,6 @@
 
 .col.picture{
     margin: 0;
-    padding: 15px;
     min-height: 400px;
     height: auto;
     margin-top: 25px;
@@ -46,9 +49,11 @@
     width: 100%;
     height: auto;
     min-height: 1000px;
+    position: relative;
 }
 
 .col-8,.col-4{
+    position: relative;
     min-width: 350px;
 }
 
@@ -58,268 +63,45 @@
 }
  
 .col-8 > .test-box{
-    padding: 10px;
     position: relative;
     width: auto;
-    height: 500px;
-    background: rgb(25,0,255);
-    background: linear-gradient(355deg, rgba(25,0,255,1) 0%, rgba(255,188,0,1) 100%);
-
+    height: 500px; 
 }
-
-#HelloLogo{
+.test-box > .PictureBox1{
+    position: relative;
+    filter: brightness(95%);
     width: 100%;
-    position: absolute;
-    top: 30%;
-    left: 220px;
-    transform: translate(-50%,-50%);
+    height: 100%;
+    overflow: hidden;
+    background: url("../picture/FirstBoxSectionPicture.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    transition: filter 800ms;
 }
 
-#HelloLogo path:nth-child(2){
-    stroke-dasharray: 215px;
-    stroke-dashoffset: 215px;
-    animation: line-anim 2s ease forwards 1s;
-}
-#HelloLogo path:nth-child(3){
-    stroke-dasharray: 145px;
-    stroke-dashoffset: 145px;
-    animation: line-anim 2s ease forwards 1.3s;
-}
-#HelloLogo path:nth-child(4){
-    stroke-dasharray: 95px;
-    stroke-dashoffset: 95px;
-    animation: line-anim 2s ease forwards 1.6s;
-}
-#HelloLogo path:nth-child(5){
-    stroke-dasharray: 95px;
-    stroke-dashoffset: 95px;
-    animation: line-anim 2s ease forwards 1.9s;
-}
-#HelloLogo path:nth-child(6){
-    stroke-dasharray: 95px;
-    stroke-dashoffset: 95px;
-    animation: line-anim 2s ease forwards 2.2s;
-}
-
-#HelloLogo path:nth-child(7){
-    stroke-dasharray: 95px;
-    stroke-dashoffset: 95px;
-    animation: line-anim 2s ease forwards 2.5s;
-}
-#HelloLogo path:nth-child(8){
-    stroke-dasharray: 85px;
-    stroke-dashoffset: 85px;
-    animation: line-anim 2s ease forwards 2.8s;
-}
-#HelloLogo path:nth-child(9){
-    stroke-dasharray: 265px;
-    stroke-dashoffset: 265px;
-    animation: line-anim 2s ease forwards 3.1s;
+.test-box:hover > .PictureBox1 {
+    filter: brightness(65%);
 }
 
 
-        #NameLogo{
-            position: absolute;
-            top: 40%;
-            left: 105px;
-        }
-        #NameLogo path:nth-child(2){
-            stroke-dasharray: 398px;
-            stroke-dashoffset: 398px;
-            animation: line-anim 2s ease forwards 1s;
-        }
-        #NameLogo path:nth-child(3){
-            stroke-dasharray: 172px;
-            stroke-dashoffset: 172px;
-            animation: line-anim 2s ease forwards 1.3s;
-        }
-        #NameLogo path:nth-child(4){
-            stroke-dasharray: 182px;
-            stroke-dashoffset: 182px;
-            animation: line-anim 2s ease forwards 1.6s;
-        }
-        #NameLogo path:nth-child(5){
-            stroke-dasharray: 100px;
-            stroke-dashoffset: 100px;
-            animation: line-anim 2s ease forwards 1.9s;
-        }
-        #NameLogo path:nth-child(6){
-            stroke-dasharray: 168px;
-            stroke-dashoffset: 168px;
-            animation: line-anim 2s ease forwards 2.2s;
-        }
-        #NameLogo path:nth-child(7){
-            stroke-dasharray: 130px;
-            stroke-dashoffset: 130px;
-            animation: line-anim 2s ease forwards 2.5s;
-        }
-
-
-        #NameLogo path:nth-child(8){
-            stroke-dasharray: 225px;
-            stroke-dashoffset: 225px;
-            animation: line-anim 2s ease forwards 2.8s;
-        }
-        #NameLogo path:nth-child(9){
-            stroke-dasharray: 121px;
-            stroke-dashoffset: 121px;
-            animation: line-anim 2s ease forwards 3.1s;
-        }
-        #NameLogo path:nth-child(10){
-            stroke-dasharray: 198px;
-            stroke-dashoffset: 198px;
-            animation: line-anim 2s ease forwards 3.4s;
-        }
-        #NameLogo path:nth-child(11){
-            stroke-dasharray: 195px;
-            stroke-dashoffset: 195px;
-            animation: line-anim 2s ease forwards 3.7s;
-        }
-        #NameLogo path:nth-child(12){
-            stroke-dasharray: 174px;
-            stroke-dashoffset: 174px;
-            animation: line-anim 2s ease forwards 4.1s;
-        }
-        #NameLogo path:nth-child(13){
-            stroke-dasharray: 275px;
-            stroke-dashoffset: 275px;
-            animation: line-anim 2s ease forwards 4.4s;
-        }
-        #NameLogo path:nth-child(14){
-            stroke-dasharray: 211px;
-            stroke-dashoffset: 211px;
-            animation: line-anim 2s ease forwards 4.7s;
-        }
-        #NameLogo path:nth-child(15){
-            stroke-dasharray: 223px;
-            stroke-dashoffset: 223px;
-            animation: line-anim 2s ease forwards 5s;
-        }
-        #NameLogo path:nth-child(16){
-            stroke-dasharray: 95px;
-            stroke-dashoffset: 95px;
-            animation: line-anim 2s ease forwards 5.3s;
-        }
-
-@keyframes line-anim{
-    to{
-        stroke-dashoffset: 0px;
-    }
-}
 
 
 .col-4 > .test-box1{
     position: relative;
-    background-color: rgb(187, 187, 187);
+    background-color: rgb(255, 255, 255);
     width: 100%;
     height: 500px;
     transition: 0.3s all linear;
 }
-        .col-4 > .test-box1:hover #FlyModel{
-            transform: scale(1.55);
-        }  
-        
-        #FlyModel{
-            transition: 0.3s all linear;
-            width: 700px;
-            
-        }
-
-        #FlyModel path:nth-child(3){
-            transform-origin: 50% 50%;
-            animation-name: FlyBigCircle;
-            animation-duration: 3s;
-            animation-iteration-count: infinite;
-            animation-timing-function: linear;
-        }
-        #FlyModel path:nth-child(4){
-            transform-origin: 50% 50%;
-            animation-name: FlyBigCircle;
-            animation-duration: 3.5s;
-            animation-iteration-count: infinite;
-            animation-timing-function: linear;
-        }
-        #FlyModel circle:nth-child(7){
-            animation-name: Circle;
-            animation-duration: 1.5s;
-            animation-iteration-count: infinite;
-            animation-timing-function: linear;
-        }
-        #FlyModel circle:nth-child(6){
-            animation-name: Circle;
-            animation-duration: 6.5s;
-            animation-iteration-count: infinite;
-            animation-timing-function: linear;
-        }
-        #FlyModel circle:nth-child(7){
-            animation-name: Circle;
-            animation-duration: 1.5s;
-            animation-iteration-count: infinite;
-            animation-timing-function: linear;
-        }
-        #FlyModel circle:nth-child(8){
-            animation-name: Circle;
-            animation-duration: 1.5s;
-            animation-iteration-count: infinite;
-            animation-timing-function: linear;
-        }
-        #FlyModel circle:nth-child(9){
-            animation-name: Circle2;
-            animation-duration: 2.5s;
-            animation-iteration-count: infinite;
-            animation-timing-function: linear;
-        }
-        #FlyModel circle:nth-child(10){
-            animation-name: Circle3;
-            animation-duration: 8.5s;
-            animation-iteration-count: infinite;
-            animation-timing-function: linear;
-        }
-        #FlyModel rect:nth-child(5){
-            animation-name: Circle2;
-            animation-duration: 2.5s;
-            animation-iteration-count: infinite;
-            animation-timing-function: linear;
-        }
-      
-
-        @keyframes Circle {
-            50%{
-                transform: translateY(-80px);
-            }
-        }
-        @keyframes Circle2 {
-            50%{
-                transform: translateY(-55px);
-            }
-        }
-        @keyframes Circle3 {
-            50%{
-                transform: translateY(-95px);
-            }
-        }
-
-        @keyframes FlyBigCircle{
-            50%{
-                transform: translateY(-40px);
-            }
-        }
-            
-
-
+       
 .col > .test-box2{
-    background-color: rgb(212, 0, 255);
+    position: relative;
     width: 100%;
     height: 500px;
 }
 
 .col > .test-box3{
-    background-color: rgb(0, 255, 149);
-    width: 100%;
-    height: 500px;
-}
-.col > .test-box4{
-    background-color: rgb(255, 238, 0);
+    position: relative;
     width: 100%;
     height: 500px;
 }
@@ -415,18 +197,6 @@ h5{
 .BoxProjectText p{
     font-size: 12px;
 }
-
-@keyframes SkyText {
-    0%{
-        height: 0;
-    }
-  
-    100%{
-        opacity: 1;
-        height: 400px;
-    }
-      
-  }
 
   .custom-shape-divider-bottom-1644780572 {
     position: absolute;

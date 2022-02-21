@@ -1,0 +1,90 @@
+.col > .test-box2:hover #FlyModel{
+    transform: scale(1.25);
+}  
+
+#FlyModel{
+    transition: 0.3s all linear;
+    position: relative;
+    width: 100%;
+    height: 500px;
+}
+
+#FlyModel path:nth-child(3){
+    transform-origin: 50% 50%;
+    animation-name: FlyBigCircle;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+#FlyModel path:nth-child(4){
+    transform-origin: 50% 50%;
+    animation-name: FlyBigCircle;
+    animation-duration: 3.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+#FlyModel circle:nth-child(11){
+    animation-name: Circle;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+#FlyModel circle:nth-child(6){
+    animation-name: Circle;
+    animation-duration: 6.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+#FlyModel circle:nth-child(7){
+    animation-name: Circle;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+#FlyModel circle:nth-child(8){
+    animation-name: Circle;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+#FlyModel circle:nth-child(9){
+    animation-name: Circle2;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+#FlyModel circle:nth-child(10){
+    animation-name: Circle3;
+    animation-duration: 8.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+#FlyModel rect:nth-child(6){
+    animation-name: Circle2;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+
+@keyframes Circle {
+    50%{
+        transform: translateY(-80px);
+    }
+}
+@keyframes Circle2 {
+    50%{
+        transform: translateY(-55px);
+    }
+}
+@keyframes Circle3 {
+    50%{
+        transform: translateY(-95px);
+    }
+}
+
+@keyframes FlyBigCircle{
+    50%{
+        transform: translateY(-40px);
+    }
+}
