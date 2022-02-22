@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import ReactDOM from 'react-dom';
 import $ from 'jquery';
-  import video from "../movies/videoOne.mp4";
   import MePicture from '../picture/portfolio-picutre.png';
   import REACTPicture from '../icon/react.png';
   import JSPicture from '../icon/js.png';
@@ -19,6 +18,8 @@ import $ from 'jquery';
     import ProjectMysticwar from '../project-picture/projekt3.png';
     import ProjectTerminalDoctor from '../project-picture/projekt4.png';
     import ProjectPortfolio from '../project-picture/projekt5.png';
+    import ProjectOmniFood from '../project-picture/projekt6.png';
+    import ProjectCurrentPortfilio from '../project-picture/projekt7.png';
       import CubeAnimation from '../script/cubeanimation.jsx';
       import star from '../picture/gwiazda.png';
       import '../svg/ComputerSVG.css';
@@ -132,13 +133,7 @@ function App() {
       <path d="M542.366 56V5.89258H551.971V32.4844L563.216 19.7012H575.042L562.635 32.9629L575.931 56H565.574L556.448 39.6963L551.971 44.3789V56H542.366Z" stroke="#FBBF00" stroke-width="10" mask="url(#path-1-outside-1_1_6)"/>
       <path d="M581.673 14.7793V5.89258H591.277V14.7793H581.673ZM581.673 56V19.7012H591.277V56H581.673Z" stroke="#FBBF00" stroke-width="10" mask="url(#path-1-outside-1_1_6)"/>
                                 </svg>
-                                <div class="custom-shape-divider-bottom-1644842069">
-                                <svg id="WaveLogo" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-                                    <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25" class="shape-fill"></path>
-                                    <path d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z" opacity=".5" class="shape-fill"></path>
-                                    <path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" class="shape-fill"></path>
-                                </svg>
-                            </div>
+                                
                          </div>
                       </div>
                       <div className='col-4'>   
@@ -459,7 +454,15 @@ function App() {
                       <div className="col">
                           <p>Cześć jestem <b>Maciej Rożnawski</b>. Ukończyłem Technikum Informatyczne w Słupsku. Zdałem egzamin zawodowy i uzyskałem świadectwo kwalifikacji.</p>
                           <p>Programowaniem interesuję się od 10 roku życia.</p>
+                          <div className='col'>
+                              <div className='interests'>
+                                  <div className='interestOne'>
+                                  
+                                  </div>
+                              </div>
+                         </div>
                       </div>
+                   
                       <div className="col">
                           <img src={MyPhoto2} className='MyPhoto2'></img>
                       </div>
@@ -489,11 +492,6 @@ function App() {
                                 </div>
                               </div>
                           </div>
-                          <div className="col">
-                            <div className='boxblackwin'>
-                              <p className='blackwin' id="blackwin">0 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad dolor quo optio sunt error</p>
-                            </div>
-                          </div>
                         </div>
                       <div className='row'>
                           <div className="col">
@@ -514,50 +512,74 @@ function App() {
 
             <section>
              <div className='cubesection'></div>
-                <div className='BoxSection'>
+                <div className='BoxSectionTech'>
                   <h3>Poznane Technologie
                         <div className='line-decoration'></div>
                       </h3>
                   <div className='row'>
                     <div className='col'>
-                      <div className='Js-Tech'></div>
+                      <div className='CubeTech'>
+                         <div className='Js-Tech'></div>
+                      </div>
                     </div>  
                     <div className='col'>
-                      <div className='React-Tech'></div>
+                      <div className='CubeTech'>
+                        <div className='React-Tech'></div>
+                      </div>
                     </div>       
                     <div className='col'>
-                      <div className='Ts-Tech'></div>
+                     <div className='CubeTech'>
+                        <div className='Ts-Tech'></div>
+                      </div>
                     </div>  
                     <div className='col'>
-                      <div className='Html-Tech'></div>
+                      <div className='CubeTech'>
+                        <div className='Html-Tech'></div>
+                      </div>
                     </div>  
                 </div>
                 <div className='row'>
                     <div className='col'>
-                      <div className='Css-Tech'></div>
+                      <div className='CubeTech'>
+                        <div className='Css-Tech'></div>
+                      </div>
                     </div>  
                     <div className='col'>
-                      <div className='C-Tech'></div>
+                      <div className='CubeTech'>
+                        <div className='C-Tech'></div>
+                      </div>
                     </div>       
                     <div className='col'>
-                      <div className='Bootstrap-Tech'></div>
+                     <div className='CubeTech'>
+                        <div className='Bootstrap-Tech'></div>
+                      </div>
                     </div>  
                     <div className='col'>
-                      <div className='Php-Tech'></div>
+                      <div className='CubeTech'>
+                        <div className='Php-Tech'></div>
+                      </div>                 
                     </div>  
                 </div>
                 <div className='row'>
                     <div className='col'>
-                      <div className='Git-Tech'></div>
+                      <div className='CubeTech'>
+                        <div className='Git-Tech'></div>
+                      </div>
+                    </div>  
+                      <div className='col'>
+                    <div className='CubeTech'>
+                        <div className='Svg-Tech'></div>
+                      </div>
+                    </div>  
+                     <div className='col'>
+                    <div className='CubeTech'>
+                        <div className='Figma-Tech'></div>
+                      </div>
                     </div>  
                     <div className='col'>
-                      <div className='Svg-Tech'></div>
-                    </div>  
-                    <div className='col'>
-                      <div className='Figma-Tech'></div>
-                    </div>  
-                    <div className='col'>
-                      <div className='Vsc-Tech'></div>
+                      <div className='CubeTech'>
+                        <div className='Vsc-Tech'></div>
+                      </div>
                     </div>  
                 </div>
               </div>
@@ -570,119 +592,160 @@ function App() {
                  <h3>Projekty
                   <div className='line-decoration'></div>
                 </h3>
-                  <div className="container">
-                  <div className="row">
-                      <div className="col picture">
-                        <div className='BoxProject'>
-                           <img src={ProjectDiva} className='WinProjectPicture'></img>
-                            <div className='BoxProjectText'>
-                                <h4>DivaSłupsk</h4>
-                                <div className='line-decoration'></div>
-                                <h5>Pierwszy Komercyjny</h5>
-                                <p>Salon zabiegów kosmetycznych w Słupsku</p>
-                            </div>
-                              <a href='http://diva-slupsk.pl/' target="_blank">
-                                  <button className='BLButtonLive'>Live</button>
-                              </a>
-                            <div className='BoxLanguages'>
-                              <div className='BoxLanguagesCSS'><img src={CSSPicture} className='BoxLanguagesIcon'></img></div>
-                              <div className='BoxLanguagesHTML'><img src={HTMLPicture} className='BoxLanguagesIcon'></img></div>
-                              <div className='BoxLanguagesBT'><img src={BootStrapPicture} className='BoxLanguagesIcon'></img></div>
-                            </div>
-                        </div>
-                      </div>
-                      <div className="col picture">
-                        <div className='BoxProject2'>
-                           <img src={ProjectRenRom} className='WinProjectPicture'></img>
-                            <div className='BoxProjectText'>
-                                <h4>RenRom</h4>
-                                <div className='line-decoration'></div>
-                                <h5>Komercyjny</h5>
-                                <p>Strona rehabilitacji domowej w Wejherowie</p>
-                            </div>
-                            <a href='https://www.renrom.pl/' target="_blank">
-                                  <button className='BLButtonLive'>Live</button>
-                              </a>
-                            <div className='BoxLanguages'>
-                              <div className='BoxLanguagesPHP'><img src={PHPicture} className='BoxLanguagesIcon'></img></div>
-                              <div className='BoxLanguagesCSS'><img src={CSSPicture} className='BoxLanguagesIcon'></img></div>
-                              <div className='BoxLanguagesHTML'><img src={HTMLPicture} className='BoxLanguagesIcon'></img></div>
-                              <div className='BoxLanguagesBT'><img src={BootStrapPicture} className='BoxLanguagesIcon'></img></div>
-                            </div>
-                        </div>
-                      </div>
-                      <div className="col picture">
-                        <div className='BoxProject'>
-                           <img src={ProjectMysticwar} className='WinProjectPicture'></img>
-                            <div className='BoxProjectText'>
-                                <h4>Mysticwar</h4>
-                                <div className='line-decoration'></div>
-                                <h5> Moja Gra</h5>
-                                <p>Moja pierwsza gra Web, która jest w trakcie pracy, tworzą tę gre dwie osoby.Gra jest głównie tworzona w jęzuku PHP i JavaScript</p>
-                            </div>
-                            <a href='' target="_blank">
-                                  <button className='BLButtonLive'>Live</button>
-                              </a>
-                              <a href='' target="_blank">
-                                 <button className='BLButtonCode'>Kod</button>
-                              </a>
-                            <div className='BoxLanguages'>
-                              <div className='BoxLanguagesJS'><img src={JSPicture} className='BoxLanguagesIcon'></img></div>
-                              <div className='BoxLanguagesPHP'><img src={PHPicture} className='BoxLanguagesIcon'></img></div>
-                              <div className='BoxLanguagesCSS'><img src={CSSPicture} className='BoxLanguagesIcon'></img></div>
-                              <div className='BoxLanguagesHTML'><img src={HTMLPicture} className='BoxLanguagesIcon'></img></div>
-                            </div>
-                        </div>
-                      </div>
-                  </div>
-                        <div className="row">
-                            <div className="col picture">
-                              <div className='BoxProject3'>
-                                <img src={ProjectTerminalDoctor} className='WinProjectPicture'></img>
-                                  <div className='BoxProjectText'>
-                                      <h4>Terminal Doctor</h4>
-                                      <div className='line-decoration'></div>
-                                      <p>dasdasdasd</p>
-                                  </div>
-                                  <a href='' target="_blank">
-                                  <button className='BLButtonLive'>Live</button>
-                              </a>
-                              <a href='' target="_blank">
-                                 <button className='BLButtonCode'>Kod</button>
-                              </a>
-                                  <div className='BoxLanguages'>
-                                    <div className='BoxLanguagesReact'><img src={REACTPicture} className='BoxLanguagesIcon'></img></div>
-                                    <div className='BoxLanguagesJS'><img src={JSPicture} className='BoxLanguagesIcon'></img></div>
-                                    <div className='BoxLanguagesCSS'><img src={CSSPicture} className='BoxLanguagesIcon'></img></div>
-                                    <div className='BoxLanguagesHTML'><img src={HTMLPicture} className='BoxLanguagesIcon'></img></div>
-                                    <div className='BoxLanguagesBT'><img src={BootStrapPicture} className='BoxLanguagesIcon'></img></div>
-                                  </div>
+                  <div className="ContainerProject">
+                    <div className="row">
+                        <div className="col picture">
+                          <div className='BoxProject'>
+                            <img src={ProjectDiva} className='WinProjectPicture'></img>
+                              <div className='BoxProjectText'>
+                                  <h4>DivaSłupsk</h4>
+                                  <div className='line-decoration'></div>
+                                  <h5>Pierwszy Komercyjny</h5>
+                                  <p>Salon zabiegów kosmetycznych w Słupsku</p>
                               </div>
-                            </div>
-                            <div className="col picture">
-                              <div className='BoxProject'>
-                                <img src={ProjectPortfolio} className='WinProjectPicture'></img>
-                                  <div className='BoxProjectText'>
-                                      <h4>Portfolio</h4>
-                                      <div className='line-decoration'></div>
-                                      <p>dasdasdasd</p>
-                                  </div>
-                                  <a href='' target="_blank">
-                                  <button className='BLButtonLive'>Live</button>
-                              </a>
-                              <a href='' target="_blank">
-                                 <button className='BLButtonCode'>Kod</button>
-                              </a>
-                                  <div className='BoxLanguages'>
-                                    <div className='BoxLanguagesReact'><img src={REACTPicture} className='BoxLanguagesIcon'></img></div>
-                                    <div className='BoxLanguagesJS'><img src={JSPicture} className='BoxLanguagesIcon'></img></div>
-                                    <div className='BoxLanguagesCSS'><img src={CSSPicture} className='BoxLanguagesIcon'></img></div>
-                                    <div className='BoxLanguagesHTML'><img src={HTMLPicture} className='BoxLanguagesIcon'></img></div>
-                                    <div className='BoxLanguagesBT'><img src={BootStrapPicture} className='BoxLanguagesIcon'></img></div>
-                                  </div>
+                                <a href='http://diva-slupsk.pl/' target="_blank">
+                                    <button className='BLButtonLive'>Live</button>
+                                </a>
+                              <div className='BoxLanguages'>
+                                <div className='BoxLanguagesCSS'><img src={CSSPicture} className='BoxLanguagesIcon'></img></div>
+                                <div className='BoxLanguagesHTML'><img src={HTMLPicture} className='BoxLanguagesIcon'></img></div>
+                                <div className='BoxLanguagesBT'><img src={BootStrapPicture} className='BoxLanguagesIcon'></img></div>
                               </div>
-                            </div>
+                          </div>
                         </div>
+                        <div className="col picture">
+                          <div className='BoxProject2'>
+                            <img src={ProjectRenRom} className='WinProjectPicture'></img>
+                              <div className='BoxProjectText'>
+                                  <h4>RenRom</h4>
+                                  <div className='line-decoration'></div>
+                                  <h5>Komercyjny</h5>
+                                  <p>Strona rehabilitacji domowej w Wejherowie</p>
+                              </div>
+                              <a href='https://www.renrom.pl/' target="_blank">
+                                    <button className='BLButtonLive'>Live</button>
+                                </a>
+                              <div className='BoxLanguages'>
+                                <div className='BoxLanguagesPHP'><img src={PHPicture} className='BoxLanguagesIcon'></img></div>
+                                <div className='BoxLanguagesCSS'><img src={CSSPicture} className='BoxLanguagesIcon'></img></div>
+                                <div className='BoxLanguagesHTML'><img src={HTMLPicture} className='BoxLanguagesIcon'></img></div>
+                                <div className='BoxLanguagesBT'><img src={BootStrapPicture} className='BoxLanguagesIcon'></img></div>
+                              </div>
+                          </div>
+                        </div>
+                        <div className="col picture">
+                          <div className='BoxProject'>
+                            <img src={ProjectMysticwar} className='WinProjectPicture'></img>
+                              <div className='BoxProjectText'>
+                                  <h4>Mysticwar</h4>
+                                  <div className='line-decoration'></div>
+                                  <h5> Moja Gra</h5>
+                                  <p>Moja pierwsza gra Web, która jest w trakcie pracy, tworzą tę gre dwie osoby.Gra jest głównie tworzona w jęzuku PHP i JavaScript</p>
+                              </div>
+                              <a href='' target="_blank">
+                                    <button className='BLButtonLive'>Live</button>
+                                </a>
+                              <div className='BoxLanguages'>
+                                <div className='BoxLanguagesJS'><img src={JSPicture} className='BoxLanguagesIcon'></img></div>
+                                <div className='BoxLanguagesPHP'><img src={PHPicture} className='BoxLanguagesIcon'></img></div>
+                                <div className='BoxLanguagesCSS'><img src={CSSPicture} className='BoxLanguagesIcon'></img></div>
+                                <div className='BoxLanguagesHTML'><img src={HTMLPicture} className='BoxLanguagesIcon'></img></div>
+                              </div>
+                          </div>
+                        </div>
+                        <div className="col picture">
+                          <div className='BoxProject3'>
+                            <img src={ProjectTerminalDoctor} className='WinProjectPicture'></img>
+                              <div className='BoxProjectText'>
+                                  <h4>Terminal Doctor</h4>
+                                  <div className='line-decoration'></div>
+                                  <p>Jest to symulator rejestracji pacjetow do lekarzy, oraz dodawania nowych pacjetów, projekt nie ma
+                                  jeszcze systetmu RWD i jest w trakcie pracy</p>
+                              </div>
+                              <a href='https://figarox.github.io/doctor-terminal/' target="_blank">
+                              <button className='BLButtonLive'>Live</button>
+                          </a>
+                          <a href='https://github.com/figarox/doctor-terminal' target="_blank">
+                              <button className='BLButtonCode'>Kod</button>
+                          </a>
+                              <div className='BoxLanguages'>
+                                <div className='BoxLanguagesReact'><img src={REACTPicture} className='BoxLanguagesIcon'></img></div>
+                                <div className='BoxLanguagesJS'><img src={JSPicture} className='BoxLanguagesIcon'></img></div>
+                                <div className='BoxLanguagesCSS'><img src={CSSPicture} className='BoxLanguagesIcon'></img></div>
+                                <div className='BoxLanguagesHTML'><img src={HTMLPicture} className='BoxLanguagesIcon'></img></div>
+                                <div className='BoxLanguagesBT'><img src={BootStrapPicture} className='BoxLanguagesIcon'></img></div>
+                              </div>
+                          </div>
+                        </div>
+                        <div className="col picture">
+                          <div className='BoxProject'>
+                            <img src={ProjectPortfolio} className='WinProjectPicture'></img>
+                              <div className='BoxProjectText'>
+                                  <h4>Portfolio</h4>
+                                  <div className='line-decoration'></div>
+                                  <p>Pierwsze Portfolio</p>
+                              </div>
+                              <a href='https://figarox.github.io/projektx/' target="_blank">
+                              <button className='BLButtonLive'>Live</button>
+                          </a>
+                          <a href='https://github.com/figarox/projektx' target="_blank">
+                              <button className='BLButtonCode'>Kod</button>
+                          </a>
+                              <div className='BoxLanguages'>
+                                <div className='BoxLanguagesReact'><img src={REACTPicture} className='BoxLanguagesIcon'></img></div>
+                                <div className='BoxLanguagesJS'><img src={JSPicture} className='BoxLanguagesIcon'></img></div>
+                                <div className='BoxLanguagesCSS'><img src={CSSPicture} className='BoxLanguagesIcon'></img></div>
+                                <div className='BoxLanguagesHTML'><img src={HTMLPicture} className='BoxLanguagesIcon'></img></div>
+                                <div className='BoxLanguagesBT'><img src={BootStrapPicture} className='BoxLanguagesIcon'></img></div>
+                              </div>
+                          </div>
+                        </div>
+                        <div className="col picture">
+                          <div className='BoxProject2'>
+                        <img src={ProjectOmniFood} className='WinProjectPicture'></img>
+                        <div className='BoxProjectText'>
+                            <h4>OmniFood</h4>
+                            <div className='line-decoration'></div>
+                            <h5>Praktyki</h5>
+                            <p>Strona tworzona na praktykach w Kaliopie</p>
+                        </div>
+                        <a href='https://figarox.github.io/omnifood/' target="_blank">
+                              <button className='BLButtonLive'>Live</button>
+                          </a>
+                          <a href='https://github.com/figarox/omnifood' target="_blank">
+                              <button className='BLButtonCode'>Kod</button>
+                          </a>
+                        <div className='BoxLanguages'>
+                          <div className='BoxLanguagesCSS'><img src={CSSPicture} className='BoxLanguagesIcon'></img></div>
+                          <div className='BoxLanguagesHTML'><img src={HTMLPicture} className='BoxLanguagesIcon'></img></div>
+                          <div className='BoxLanguagesBT'><img src={BootStrapPicture} className='BoxLanguagesIcon'></img></div>
+                        </div>
+                          </div>
+                        </div>
+                        <div className="col picture">
+                          <div className='BoxProject'>
+                            <img src={ProjectCurrentPortfilio} className='WinProjectPicture'></img>
+                              <div className='BoxProjectText'>
+                                  <h4>Portfolio</h4>
+                                  <div className='line-decoration'></div>
+                                  <p>Aktualna moja wizytówka</p>
+                              </div>
+                                <a href='' target="_blank">
+                                    <button className='BLButtonLive'>Live</button>
+                                </a>
+                                <a href='https://github.com/figarox/omnifood' target="_blank">
+                                    <button className='BLButtonCode'>Kod</button>
+                                </a>
+                                <div className='BoxLanguages'>
+                                <div className='BoxLanguagesReact'><img src={REACTPicture} className='BoxLanguagesIcon'></img></div>
+                                <div className='BoxLanguagesJS'><img src={JSPicture} className='BoxLanguagesIcon'></img></div>
+                                <div className='BoxLanguagesCSS'><img src={CSSPicture} className='BoxLanguagesIcon'></img></div>
+                                <div className='BoxLanguagesHTML'><img src={HTMLPicture} className='BoxLanguagesIcon'></img></div>
+                                <div className='BoxLanguagesBT'><img src={BootStrapPicture} className='BoxLanguagesIcon'></img></div>
+                              </div>
+                          </div>
+                        </div>
+                   </div>
                 </div>
               </div>
             </section>

@@ -4,15 +4,6 @@ import $ from 'jquery';
 
 const CubeAnimation = () => {
     const array = ['front','right','back','left','top','bottom']
-    const tabtext = [
-        '0 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad dolor quo optio sunt error',
-        '1 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad dolor quo optio sunt error',
-        'Dzięki znajomości Javascriptu, oraz jego frameworków: Reacta oraz Vue, jestem w stanie robić proste, jak i zaawansowane strony.',
-        '3 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad dolor quo optio sunt error',
-        '4 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad dolor quo optio sunt error',
-        '5 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad dolor quo optio sunt error',
-        '6 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad dolor quo optio sunt error',
-    ]
     let value = 0;
     const [isRunning, setIsRunning] = useState(true);
     const [intervalId, setIntervalId] = useState(null);
@@ -46,9 +37,7 @@ const CubeAnimation = () => {
         if(isRunning){
             let i = count;
             const id = window.setInterval(() => {
-                if (i < 6) { 
-                    let finishtext = tabtext[i]
-                    document.getElementById('blackwin').innerHTML = finishtext             
+                if (i < 6) {           
                     let CubeID = array[i]
                     const cube = document.querySelector('.cube');
                     let currentClass = 'show-right';
