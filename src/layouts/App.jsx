@@ -719,10 +719,10 @@ function App() {
                                   <div className='line-decoration'></div>
                                   <p>Aktualna moja wizytówka</p>
                               </div>
-                                <a href='' target="_blank">
+                                <a href='https://figarox.github.io/portfolio/' target="_blank">
                                     <button className='BLButtonLive'>Live</button>
                                 </a>
-                                <a href='https://github.com/figarox/omnifood' target="_blank">
+                                <a href='https://github.com/figarox/portfolio' target="_blank">
                                     <button className='BLButtonCode'>Kod</button>
                                 </a>
                                 <div className='BoxLanguages'>
