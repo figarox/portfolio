@@ -507,72 +507,74 @@ function App() {
                 <div className='BoxSectionTech'>
                   <h1>Poznane Technologie
                       </h1>
-                  <div className='row'>
-                    <div className='col'>
-                      <div className='CubeTech'>
-                         <div className='Js-Tech'></div>
-                      </div>
-                    </div>  
-                    <div className='col'>
-                      <div className='CubeTech'>
-                        <div className='React-Tech'></div>
-                      </div>
-                    </div>       
-                    <div className='col'>
-                     <div className='CubeTech'>
-                        <div className='Ts-Tech'></div>
-                      </div>
-                    </div>  
-                    <div className='col'>
-                      <div className='CubeTech'>
-                        <div className='Html-Tech'></div>
-                      </div>
-                    </div>  
-                </div>
-                <div className='row'>
-                    <div className='col'>
-                      <div className='CubeTech'>
-                        <div className='Css-Tech'></div>
-                      </div>
-                    </div>  
-                    <div className='col'>
-                      <div className='CubeTech'>
-                        <div className='C-Tech'></div>
-                      </div>
-                    </div>       
-                    <div className='col'>
-                     <div className='CubeTech'>
-                        <div className='Bootstrap-Tech'></div>
-                      </div>
-                    </div>  
-                    <div className='col'>
-                      <div className='CubeTech'>
-                        <div className='Php-Tech'></div>
-                      </div>                 
-                    </div>  
-                </div>
-                <div className='row'>
-                    <div className='col'>
-                      <div className='CubeTech'>
-                        <div className='Git-Tech'></div>
-                      </div>
-                    </div>  
+                  <div className='TechBox'>
+                    <div className='row'>
                       <div className='col'>
-                    <div className='CubeTech'>
-                        <div className='Svg-Tech'></div>
-                      </div>
-                    </div>  
-                     <div className='col'>
-                    <div className='CubeTech'>
-                        <div className='Figma-Tech'></div>
-                      </div>
-                    </div>  
-                    <div className='col'>
+                        <div className='CubeTech'>
+                          <div className='Js-Tech'></div>
+                        </div>
+                      </div>  
+                      <div className='col'>
+                        <div className='CubeTech'>
+                          <div className='React-Tech'></div>
+                        </div>
+                      </div>       
+                      <div className='col'>
                       <div className='CubeTech'>
-                        <div className='Vsc-Tech'></div>
-                      </div>
-                    </div>  
-                </div>
+                          <div className='Ts-Tech'></div>
+                        </div>
+                      </div>  
+                      <div className='col'>
+                        <div className='CubeTech'>
+                          <div className='Html-Tech'></div>
+                        </div>
+                      </div>  
+                    </div>
+                    <div className='row'>
+                        <div className='col'>
+                          <div className='CubeTech'>
+                            <div className='Css-Tech'></div>
+                          </div>
+                        </div>  
+                        <div className='col'>
+                          <div className='CubeTech'>
+                            <div className='C-Tech'></div>
+                          </div>
+                        </div>       
+                        <div className='col'>
+                        <div className='CubeTech'>
+                            <div className='Bootstrap-Tech'></div>
+                          </div>
+                        </div>  
+                        <div className='col'>
+                          <div className='CubeTech'>
+                            <div className='Php-Tech'></div>
+                          </div>                 
+                        </div>  
+                    </div>
+                    <div className='row'>
+                        <div className='col'>
+                          <div className='CubeTech'>
+                            <div className='Git-Tech'></div>
+                          </div>
+                        </div>  
+                          <div className='col'>
+                        <div className='CubeTech'>
+                            <div className='Svg-Tech'></div>
+                          </div>
+                        </div>  
+                        <div className='col'>
+                        <div className='CubeTech'>
+                            <div className='Figma-Tech'></div>
+                          </div>
+                        </div>  
+                        <div className='col'>
+                          <div className='CubeTech'>
+                            <div className='Vsc-Tech'></div>
+                          </div>
+                        </div>  
+                    </div>
+                  </div>
               </div>
             </section>
             <img src={star} className='starstyle'></img>
