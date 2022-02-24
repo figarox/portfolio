@@ -4,16 +4,6 @@
 
 }
 
-.line-decoration{
-    position: relative;
-    width: 250px;
-    height: 5px;
-    margin-top: 5px;
-    background-color: #FBBF00;
-}
-
-
-
 .BoxSocial {
      position: relative;
      width: 70px;
@@ -52,6 +42,13 @@ img.MyPhoto2 {
     background-color: aqua;
 }
 
+.AboutMe-Text{
+    position: relative;
+    margin-top: 30px;
+    top: 50%;  
+    left: 50%;  
+    transform: translate(-50%, -50%);
+}
 
 
 .CubeTech{

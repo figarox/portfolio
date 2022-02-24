@@ -79,7 +79,7 @@ a .BLButtonCode:hover{
 
 .col.picture > div:hover{
     transition: 0.3s all linear;
-    transform: scale(1.5);
+    transform: scale(1.2);
     z-index: 5;
 }
 

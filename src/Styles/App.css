@@ -16,6 +16,7 @@
 
 .ContainerProject{
     width: 97%;
+    padding: 50px;
     margin-left: 30px;
     margin-right: 30px;
 }
@@ -33,6 +34,7 @@
 .row{
     margin: 0 auto;
     height: auto;
+    margin-top: 20px;
 }
 
 .row>*{
@@ -175,10 +177,18 @@ background: linear-gradient(138deg, rgba(25,0,255,1) 0%, rgba(255,188,0,1) 100%)
 }
 
 h1{
+    position: relative;
+    top: 30px;
+    margin-left: 50px;
+    padding-bottom: 10px;
+    border-bottom: 5px solid #FBBF00;
+    display: inline;
+    
+}
+h2{
     margin-left: 20px;
     padding: 30px;
 }
-
 h3{
     position: relative;
     margin: 50px 0px 0px 30px;

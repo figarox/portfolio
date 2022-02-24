@@ -447,22 +447,16 @@ function App() {
             <section>
               <div className='cubesection'></div>
               <div className='BoxSection'>
-              <h1>Kim jestem?
-                    <div className='line-decoration'></div>
-                  </h1>
+              <h1>Kim jestem?</h1>
                     <div className="row">
                       <div className="col">
-                          <p>Cześć jestem <b>Maciej Rożnawski</b>. Ukończyłem Technikum Informatyczne w Słupsku. Zdałem egzamin zawodowy i uzyskałem świadectwo kwalifikacji.</p>
-                          <p>Programowaniem interesuję się od 10 roku życia.</p>
-                          <div className='col'>
-                              <div className='interests'>
-                                  <div className='interestOne'>
-                                  
-                                  </div>
-                              </div>
-                         </div>
+                        <div className='AboutMe-Text'>
+                        <p style={{fontSize: "25px"}}>Cześć</p><p> Jestem <b>Maciej Rożnawski</b>. Ukończyłem Technikum Informatyczne w Słupsku. Zdałem egzamin zawodowy i uzyskałem świadectwo kwalifikacji.</p>
+                            <h2>Dlaczego akurat Programowanie?</h2>
+                            <p>
+                            A wiec moja przygoda z programownaiem rozpoczełą się od momentu w , którym dostałem się do technikum do klasy o profilu informatycznym. Wiedza z zajęć nie wystarczała mi a wiec zapsiałem się na wiele kursów on-line gdzie mogłem poszerzać swoją wiedzę. Na początku uczyłem się BackEndu ale po czasie odnalazlem powołanie w FrontEndzie i własnie w tym kierunku pragane się rozwijać i poświecić moja przyszłość</p>
+                        </div>
                       </div>
-                   
                       <div className="col">
                           <img src={MyPhoto2} className='MyPhoto2'></img>
                       </div>
@@ -476,9 +470,7 @@ function App() {
             <div className='cubesection'></div>
               <div className='BoxSection'>
                 <div className='TechPicutre'>
-                        <h1>Umiejętności
-                          <div className='line-decoration'></div>
-                        </h1>
+                          <h1>Umiejętności</h1>
                         <div className="row">
                           <div className="col">
                               <div className="containerCube">
@@ -513,9 +505,8 @@ function App() {
             <section>
              <div className='cubesection'></div>
                 <div className='BoxSectionTech'>
-                  <h3>Poznane Technologie
-                        <div className='line-decoration'></div>
-                      </h3>
+                  <h1>Poznane Technologie
+                      </h1>
                   <div className='row'>
                     <div className='col'>
                       <div className='CubeTech'>
@@ -589,9 +580,7 @@ function App() {
             <section style={Project}>
             <div className='cubesection'></div>
               <div className='BoxSection'>
-                 <h3>Projekty
-                  <div className='line-decoration'></div>
-                </h3>
+                 <h1>Projekty</h1>
                   <div className="ContainerProject">
                     <div className="row">
                         <div className="col picture">
