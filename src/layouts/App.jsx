@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import ReactDOM from 'react-dom';
-import $ from 'jquery';
   import MePicture from '../picture/portfolio-picutre.png';
   import REACTPicture from '../icon/react.png';
   import JSPicture from '../icon/js.png';
@@ -20,7 +19,6 @@ import $ from 'jquery';
     import ProjectPortfolio from '../project-picture/projekt5.png';
     import ProjectOmniFood from '../project-picture/projekt6.png';
     import ProjectCurrentPortfilio from '../project-picture/projekt7.png';
-      import CubeAnimation from '../script/cubeanimation.jsx';
       import star from '../picture/gwiazda.png';
       import '../svg/ComputerSVG.css';
       import '../svg/LogoSVG.css';
@@ -53,7 +51,6 @@ function App() {
 
   return (
     <div style={AppStyles}>
-        {<CubeAnimation/>}
         <div className='body'>
             <nav class="menu">
               <input type="checkbox" href="#" class="menu-open" name="menu-open" id="menu-open"/>
@@ -442,7 +439,6 @@ function App() {
                   </div>
               </div>
             </section>
-            <img src={star} className='starstyle'></img>
 
             <section>
               <div className='cubesection'></div>
@@ -463,44 +459,6 @@ function App() {
                     </div>
               </div>
             </section>
-            <img src={star} className='starstyle'></img>
-
-
-            <section>
-            <div className='cubesection'></div>
-              <div className='BoxSection'>
-                <div className='TechPicutre'>
-                          <h1>Umiejętności</h1>
-                        <div className="row">
-                          <div className="col">
-                              <div className="containerCube">
-                                <div className="cube">
-                                  <div className="front"><img src={REACTPicture} className='PictureCube'></img></div>
-                                  <div className="back"><img src={JSPicture} className='PictureCube'></img></div>
-                                  <div className="right"><img src={PHPicture} className='PictureCube'></img></div>
-                                  <div className="left"><img src={HTMLPicture} className='PictureCube'></img></div>
-                                  <div className="top"><img src={CPicture} className='PictureCube'></img></div>
-                                  <div className="bottom"><img src={CSSPicture} className='PictureCube'></img></div>
-                                </div>
-                              </div>
-                          </div>
-                        </div>
-                      <div className='row'>
-                          <div className="col">
-                              <div>
-                                <div className='CircleAnimation'>
-                                    <button id='AnimationPause' class='play'></button>
-                                </div>
-                                <div className='CubeBar'>
-                                  <div id='CubeBarLine'></div>
-                                </div>
-                            </div>
-                      </div>
-                    </div>
-                </div>
-              </div>
-            </section>
-            <img src={star} className='starstyle'></img>
 
             <section>
              <div className='cubesection'></div>
@@ -577,7 +535,6 @@ function App() {
                   </div>
               </div>
             </section>
-            <img src={star} className='starstyle'></img>
             
             <section style={Project}>
             <div className='cubesection'></div>
@@ -589,10 +546,9 @@ function App() {
                           <div className='BoxProject'>
                             <img src={ProjectDiva} className='WinProjectPicture'></img>
                               <div className='BoxProjectText'>
-                                  <h4>DivaSłupsk</h4>
-                                  <div className='line-decoration'></div>
-                                  <h5>Pierwszy Komercyjny</h5>
-                                  <p>Salon zabiegów kosmetycznych w Słupsku</p>
+                                  <p className='TitleProject'>DivaSłupsk</p>
+                                  <p className='HowProject'>Komercyjny</p>
+                                  <p className='TextProject'>Strona gabinetu komsetycznego w Słupsku</p>
                               </div>
                                 <a href='http://diva-slupsk.pl/' target="_blank">
                                     <button className='BLButtonLive'>Live</button>
@@ -608,10 +564,9 @@ function App() {
                           <div className='BoxProject2'>
                             <img src={ProjectRenRom} className='WinProjectPicture'></img>
                               <div className='BoxProjectText'>
-                                  <h4>RenRom</h4>
-                                  <div className='line-decoration'></div>
-                                  <h5>Komercyjny</h5>
-                                  <p>Strona rehabilitacji domowej w Wejherowie</p>
+                                  <p className='TitleProject'>RenRom</p>
+                                  <p className='HowProject'>Komercyjny</p>
+                                  <p className='TextProject'>Strona rehabilitacji domowej w Wejherowie</p>
                               </div>
                               <a href='https://www.renrom.pl/' target="_blank">
                                     <button className='BLButtonLive'>Live</button>
@@ -628,10 +583,10 @@ function App() {
                           <div className='BoxProject'>
                             <img src={ProjectMysticwar} className='WinProjectPicture'></img>
                               <div className='BoxProjectText'>
-                                  <h4>Mysticwar</h4>
+                              <p className='TitleProject'>Mysticwar</p>
                                   <div className='line-decoration'></div>
-                                  <h5> Moja Gra</h5>
-                                  <p>Moja pierwsza gra Web, która jest w trakcie pracy, tworzą tę gre dwie osoby.Gra jest głównie tworzona w jęzuku PHP i JavaScript</p>
+                                  <p className='HowProject'> Moja Gra</p>
+                                  <p className='TextProject'>Moja pierwsza gra Web, która jest w trakcie pracy, tworzą tę gre dwie osoby.Gra jest głównie tworzona w jęzuku PHP i JavaScript</p>
                               </div>
                               <a href='' target="_blank">
                                     <button className='BLButtonLive'>Live</button>
@@ -648,9 +603,9 @@ function App() {
                           <div className='BoxProject3'>
                             <img src={ProjectTerminalDoctor} className='WinProjectPicture'></img>
                               <div className='BoxProjectText'>
-                                  <h4>Terminal Doctor</h4>
+                              <p className='TitleProject'>Terminal Doctor</p>
                                   <div className='line-decoration'></div>
-                                  <p>Jest to symulator rejestracji pacjetow do lekarzy, oraz dodawania nowych pacjetów, projekt nie ma
+                                  <p className='TextProject'>Jest to symulator rejestracji pacjetow do lekarzy, oraz dodawania nowych pacjetów, projekt nie ma
                                   jeszcze systetmu RWD i jest w trakcie pracy</p>
                               </div>
                               <a href='https://figarox.github.io/doctor-terminal/' target="_blank">
@@ -672,9 +627,9 @@ function App() {
                           <div className='BoxProject'>
                             <img src={ProjectPortfolio} className='WinProjectPicture'></img>
                               <div className='BoxProjectText'>
-                                  <h4>Portfolio</h4>
+                              <p className='TitleProject'>Portfolio</p>
                                   <div className='line-decoration'></div>
-                                  <p>Pierwsze Portfolio</p>
+                                  <p className='TextProject'>Pierwsze Portfolio</p>
                               </div>
                               <a href='https://figarox.github.io/projektx/' target="_blank">
                               <button className='BLButtonLive'>Live</button>
@@ -695,10 +650,10 @@ function App() {
                           <div className='BoxProject2'>
                         <img src={ProjectOmniFood} className='WinProjectPicture'></img>
                         <div className='BoxProjectText'>
-                            <h4>OmniFood</h4>
+                        <p className='TitleProject'>OmniFood</p>
                             <div className='line-decoration'></div>
-                            <h5>Praktyki</h5>
-                            <p>Strona tworzona na praktykach w Kaliopie</p>
+                            <p className='HowProject'>Praktyki</p>
+                            <p className='TextProject'>Strona tworzona na praktykach w Kaliopie</p>
                         </div>
                         <a href='https://figarox.github.io/omnifood/' target="_blank">
                               <button className='BLButtonLive'>Live</button>
@@ -717,9 +672,9 @@ function App() {
                           <div className='BoxProject'>
                             <img src={ProjectCurrentPortfilio} className='WinProjectPicture'></img>
                               <div className='BoxProjectText'>
-                                  <h4>Portfolio</h4>
+                              <p className='TitleProject'>Portfolio</p>
                                   <div className='line-decoration'></div>
-                                  <p>Aktualna moja wizytówka</p>
+                                  <p className='TextProject'>Aktualna moja wizytówka</p>
                               </div>
                                 <a href='https://figarox.github.io/portfolio/' target="_blank">
                                     <button className='BLButtonLive'>Live</button>

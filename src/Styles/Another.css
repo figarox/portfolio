@@ -45,6 +45,7 @@ img.MyPhoto2 {
 .AboutMe-Text{
     position: relative;
     margin-top: 30px;
+    padding: 40px;
     top: 50%;  
     left: 50%;  
     transform: translate(-50%, -50%);
@@ -56,18 +57,36 @@ img.MyPhoto2 {
     top: 40px;
     width: 160px;
     height: 160px;
-    border: 7px solid #FBBF00;
     margin: 0 auto;
-    transition: 1100ms;
+    transition: 500ms;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .CubeTech:hover{
-    transform: scale(1.32) rotate(360deg);
+    transform: scale(0.9);
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
 }
 
 .CubeTech > div {
-    top: 50%;                        
-    transform: translate(0, 0%);
+    position: absolute;
+    top: 3%;
+    left: 3%;
+    
+} 
+p.TitleProject{
+    font-size: 29px;
+    padding-bottom: 1px;
+    border-bottom: 5px solid #FBBF00;
+    display: inline;
+    margin-bottom: 50px;
+}
+p.HowProject{
+    font-size: 20px;
+
+}
+p.TextProject{
+    margin-top: 5px;
+    font-size: 13px;
 }
 
 .TechBox{

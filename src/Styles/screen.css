@@ -63,6 +63,18 @@
     top: 50%;                        
     transform: translate(0, -50%);
 }
+section{
+  min-height: 700px;
+  width: 100%;
+}
+
+.ContainerProject{
+width: 97%;
+padding-top: 50px;
+margin-left: 0px;
+margin-right: 0px;
+}
+
 }
 
 @media only screen and (max-width: 600px) {
@@ -75,15 +87,6 @@ box-shadow: none;
     margin-left: 10px; 
   }
 
-.starstyle{
-position: relative;
-width: 350px;
-height: 200px;
-margin: 0 auto;
-display: block;
-margin-top: 50px;
-margin-bottom: 50px;
-}
 
 #HelloLogo{
   width: 160px;
@@ -117,7 +120,7 @@ margin-bottom: 50px;
 
 section{
     min-height: 700px;
-    width: 85%;
+    width: 100%;
 }
 
 .ContainerProject{
@@ -126,21 +129,11 @@ section{
   margin-left: 0px;
   margin-right: 0px;
 }
-
-.boxblackwin{
-height: 200px;
-padding: 25px;
-}
-
 .containerCube {
 top: 100px;
 height: 300px;
 }
-p.blackwin{
-color: white;
-font-size: 16px;
-margin-top: 15%;
-}
+
 .MyPhoto  {
 position: relative;
 width: 350px;
@@ -148,9 +141,7 @@ padding: 10px;
 left: 0px;
 top: -150px;
 }
-.Technologies {
-background-size: auto;
-}
+
 
 .CircleAnimation{
 margin-left: 2px;
@@ -223,21 +214,8 @@ z-index: 5;
     transition: filter 800ms;
 }
 
-.CubeTech{
-  position: relative;
-  top: 30px;
-  width: 130px;
-  height: 130px;
-  border: 7px solid #FBBF00;
-  margin: 0 auto;
-  transition: 1100ms;
-}
 
-.CubeTech > div {
-  margin: 0 auto;
-  width: 110px;
-  height: 110px;
-}
+
 .col p {
   padding-left: 10px;
   width: 95%;

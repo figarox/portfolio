@@ -1,7 +1,4 @@
-.col > .test-box2:hover #FlyModel{
-    transform: translate(-50%, -50%) scale(1.25);
 
-}  
 
 #FlyModel{
     transition: 0.3s all linear;

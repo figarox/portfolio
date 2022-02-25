@@ -1,6 +1,5 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import $ from 'jquery';
 import App from './layouts/App';
 import './Styles/App.css';
 import './Styles/cube.css';

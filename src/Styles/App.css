@@ -52,7 +52,7 @@
   
 }
 .col p {
-    padding-left: 45px;
+    margin: 0 auto;
 }
 
 .col.picture{
@@ -135,7 +135,7 @@
 
 section{
     position: relative;
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
     margin-top: 50px;
    
@@ -167,13 +167,7 @@ background: rgb(25,0,255);
 background: linear-gradient(138deg, rgba(25,0,255,1) 0%, rgba(255,188,0,1) 100%);
 }
 
-.starstyle{
-    position: relative;
-    width: 450px;
-    height: 250px;
-    margin: 0 auto;
-    display: block;
-}
+
 
 h1{
     position: relative;
