@@ -51,7 +51,9 @@ img.MyPhoto2 {
     transform: translate(-50%, -50%);
 }
 
-
+.TechBox > .row > .col{
+    min-width: 200px;
+  }
 .CubeTech{
     position: relative;
     top: 40px;
@@ -180,7 +182,6 @@ p.TextProject{
     background-size: 100%;
     background-repeat: no-repeat;
 }
-
 
 
 

@@ -14,6 +14,18 @@
     width: auto;
     height: 400px;
   }
+.Name{
+    padding: 50px;
+}
+.PortP{
+    font-size: 130px;
+    font-weight: 900;
+}
+.MyNameP{
+    top: -90px;
+    left: 40px;
+    font-size: 40px;
+}
 }
 
 @media only screen and (max-width: 1610px) {
@@ -31,6 +43,21 @@
   }
 
 }
+@media only screen and (max-width: 1370px) {
+.Name{
+    padding: 35px;
+}
+.PortP{
+    font-size: 110px;
+    font-weight: 900;
+}
+.MyNameP{
+    top: -80px;
+    left: 20px;
+    font-size: 35px;
+}
+}
+
 @media only screen and (max-width: 1225px) {
   .col-8,.col-4{
    width: 100%;
@@ -38,22 +65,21 @@
 .menu {
   margin-left: 10px; 
 }
+.Name{
+  padding: 40px;
+}
+.PortP{
+  font-size: 120px;
+  font-weight: 900;
+}
+.MyNameP{
+  top: -90px;
+  left: 40px;
+  font-size: 40px;
+}
 }
 
 @media only screen and (max-width: 850px) {
-  #HelloLogo{
-    width: 170px;
-    position: absolute;
-    top: 140px;
-    left: 135px;
-    transform: translate(-50%,-50%);
-  }
-  #NameLogo{
-    width: 400px;
-    position: absolute;
-    top: 170px;
-    left: 50px;
-  }
   img.MyPhoto2 {
     position: relative;
     width: 70%;
@@ -69,12 +95,28 @@ section{
 }
 
 .ContainerProject{
-width: 97%;
+width: 100%;
 padding-top: 50px;
 margin-left: 0px;
 margin-right: 0px;
 }
+.Name{
+  padding:20px;
+}
+.PortP{
+  position: relative;
+  top: 50px;
+  width: 80%;
+  font-size: 80px;
+  font-weight: 900;
+}
+.MyNameP{  
+  top: -20px;
+  left: 30px;
+  width: 80%;
 
+  font-size: 35px;
+}
 }
 
 @media only screen and (max-width: 600px) {
@@ -87,30 +129,11 @@ box-shadow: none;
     margin-left: 10px; 
   }
 
-
-#HelloLogo{
-  width: 160px;
-  position: absolute;
-  top: 120px;
-  left: 130px;
-  transform: translate(-50%,-50%);
-}
-#NameLogo{
-  width: 400px;
-  position: absolute;
-  top: 140px;
-  left: 50px;
-}
-
 #ComputerSVG{
   position: relative;
   width: 100%;
   height: 100%;
 }
-
-.col-4 > .test-box1:hover #FlyModel{
-  transform: scale(1);
-}  
 
 #FlyModel{
   transition: 0.3s all linear;
@@ -156,11 +179,7 @@ margin-left: -50px;
 width: 50px;
 height: 50px;
 }
-.col.picture > div:hover{
-transition: 0.3s all linear;
-transform: scale(1.08);
-z-index: 5;
-}
+
 .col.picture > div {
   z-index: 2;
   margin: 50px;
@@ -184,6 +203,23 @@ z-index: 5;
 .test-box > .PictureBox1{
   background-size: 150%;
 }
+.CubeTech {
+  width: 120px;
+  height: 120px;
+}
+.CubeTech > div {
+  position: absolute;
+  top: 10%;
+  left: 9%;
+  width: 100px;
+  height: 100px;
+}
+.TechBox > .row > .col{
+  min-width: 250px;
+}
+.AboutMe-Text {
+  padding: 20px;
+}
 
 }
 
@@ -202,40 +238,57 @@ z-index: 5;
     top: 140px;
     left: 20px;
   }
-  .test-box > .PictureBox1{
-    position: relative;
-    filter: brightness(95%);
-    width:100%;
-    height:100%;
-    object-fit:cover;
-    background: url("../picture/FirstBoxSectionPicture.jpg");
-    background-size: 190%;
-    background-repeat: no-repeat;
-    transition: filter 800ms;
+
+.AboutMe-Text {
+  padding: 10px;
 }
-
-
 
 .col p {
   padding-left: 10px;
   width: 95%;
 }
-
+.Name{
+  padding: 30px;
+}
+.PortP{
+  position: relative;
+  top: 50px;
+  font-size: 60px;
+  font-weight: 900;
+}
+.MyNameP{
+  top: -5px;
+  left: 20px;
+  font-size: 25px;
+}
 }
 
 @media only screen and (max-width: 480px) {
-  #HelloLogo{
-    width: 140px;
-    position: absolute;
-    top: 120px;
-    left: 90px;
-    transform: translate(-50%,-50%);
-  }
-  #NameLogo{
-    width: 310px;
-    position: absolute;
-    top: 140px;
-    left: 20px;
-  }
+  .starstyle {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+.TechBox > .row > .col{
+  min-width: 150px;
+}
+.ContainerProject {
+  margin-top: 50px;
+  padding: 0px;
+}
+.Name{
+  padding: 10px;
+}
+.PortP{
+  position: relative;
+  top: 90px;
+  font-size: 50px;
+  font-weight: 900;
+}
+.MyNameP{
+  top: 45px;
+  left: 20px;
+  font-size: 20px;
+}
 
 }
