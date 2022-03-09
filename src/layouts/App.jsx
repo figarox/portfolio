@@ -398,6 +398,7 @@ function App() {
                       <div className="col">
                         <div className='AboutMe-Text'>
                         <p style={{fontSize: "25px"}}>Cześć</p><p> Jestem <b>Maciej Rożnawski</b>. Ukończyłem Technikum Informatyczne w Słupsku. Zdałem egzamin zawodowy i uzyskałem świadectwo kwalifikacji.</p>
+                          <p>Aktualnie uczę się TypeScript oraz REST-API</p>
                             <h2>Dlaczego akurat Programowanie?</h2>
                             <p>
                             A wiec moja przygoda z programownaiem rozpoczełą się od momentu w , którym dostałem się do technikum do klasy o profilu informatycznym. Wiedza z zajęć nie wystarczała mi a wiec zapsiałem się na wiele kursów on-line gdzie mogłem poszerzać swoją wiedzę. Na początku uczyłem się BackEndu ale po czasie odnalazlem powołanie w FrontEndzie i własnie w tym kierunku pragane się rozwijać i poświecić moja przyszłość</p>
