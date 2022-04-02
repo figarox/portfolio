@@ -1,3 +1,1 @@
-Portfolio
-#Live
-https://figarox.github.io/portfolio/
+Portfolio https://figarox.github.io/portfolio/
